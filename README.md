@@ -1,3 +1,5 @@
+# Baseline EDI Schema
+
 <span class="sr-only">Toggle navigation</span><span class="icon-bar">
 </span><span class="icon-bar"> </span><span class="icon-bar"> </span>
 
@@ -51,117 +53,64 @@ Documentation</span>
 -   [Simple Type: **useType**](#type_useType)
 -   [Glossary](#Glossary)
 
-×
 
 #### Attribute minOccurs
 
 The minimum number of times an undefined element may occur at the
 declared location in the EDI structure.
 
-Close
-
-×
-
 #### Attribute maxOccurs
 
 The maximum number of times an undefined element may occur at the
 declared location in the EDI structure.
 
-Close
-
-×
-
 #### Attribute type
 
 The name of the target type being referenced.
-
-Close
-
-×
 
 #### Attribute minLength
 
 The minimum length allowed for an element value to be valid.
 
-Close
-
-×
-
 #### Attribute maxLength
 
 The maximum length allowed for an element value to be valid.
-
-Close
-
-×
 
 #### Attribute minOccurs
 
 The minimum number of times a type may occur at the declared location in
 the EDI structure.
 
-Close
-
-×
-
 #### Attribute maxOccurs
 
 The maximum number of times a type may occur at the declared location in
 the EDI structure.
-
-Close
-
-×
 
 #### Attribute minVersion
 
 The minimum transaction version this schema version applies to.
 
-Close
-
-×
-
 #### Attribute maxVersion
 
 The maximum transaction version this schema version applies to.
-
-Close
-
-×
 
 #### Attribute minOccurs
 
 The minimum number of times a type may occur at the declared location in
 the EDI structure.
 
-Close
-
-×
-
 #### Attribute maxOccurs
 
 The maximum number of times a type may occur at the declared location in
 the EDI structure.
 
-Close
-
-×
-
 #### Element sequence
 
 The ordered elements for a composite element implementation.
 
-Close
-
-×
-
 #### Element sequence
 
 The ordered elements and components for a segment implementation.
-
-Close
-
-×
 
 #### Attribute type
 
@@ -169,18 +118,10 @@ The name of the standard segment used at this position in the
 implementation. Must be a valid segment name that occurs in the same
 standard loop.
 
-Close
-
-×
-
 #### Attribute code
 
 Code used to identify a segment within a loop. May be useful when
 occurrences of a standard segment contain distinct information.
-
-Close
-
-×
 
 #### Attribute discriminator
 
@@ -191,20 +132,12 @@ enumeration of values used only by this implementation and not used by
 any other implementations of the standard segment in the same
 implementation loop.
 
-Close
-
-×
-
 #### Attribute minOccurs
 
 The minimum number of times a loop may repeat. A value of 0 (zero)
 indicates that the loop is optional. When used in a loop defined within
 an implementation, the value may not be less than the value set on the
 standard loop referenced by the implementation loop's 'type' attribute.
-
-Close
-
-×
 
 #### Attribute maxOccurs
 
@@ -213,51 +146,27 @@ defined within an implementation, the value may not be greater than the
 value set on the standard loop referenced by the implementation loop's
 'type' attribute.
 
-Close
-
-×
-
 #### Element sequence
 
 The ordered list of segments and sub-loops contained in this loop.
-
-Close
-
-×
 
 #### Attribute code
 
 Code used to uniquely identify a loop within the transaction/message.
 
-Close
-
-×
-
 #### Element sequence
 
 The ordered list of segments and sub-loops contained in this loop.
-
-Close
-
-×
 
 #### Attribute type
 
 The identifier (code attribute) of the standard loop this loop
 implements.
 
-Close
-
-×
-
 #### Attribute code
 
 Code used to uniquely identify a loop implementation within the
 transaction/message implementation.
-
-Close
-
-×
 
 #### Attribute discriminator
 
@@ -268,35 +177,19 @@ specify an enumeration of values used only by this implementation and
 not used by any other implementations of the standard loop at the same
 level of the transaction.
 
-Close
-
-×
-
 #### Element include
 
 Optional reference to another schema file to include.
-
-Close
-
-×
 
 #### Element sequence
 
 The ordered list of segments and sub-loops contained at the top-level of
 this transaction.
 
-Close
-
-×
-
 #### Element sequence
 
 The ordered list of segments and sub-loops contained at the top-level of
 a transaction implementation.
-
-Close
-
-×
 
 #### Attribute name
 
@@ -305,35 +198,19 @@ compositeType and segmentType elements within this schema. This value
 will be returned by an EDIStreamReader's \`getReferenceCode\` method
 when no \`code\` attribute has been specified.
 
-Close
-
-×
-
 #### Attribute code
 
 Code used to identify an element externally. This value will be returned
 by an EDIStreamReader's \`getReferenceCode\` method.
-
-Close
-
-×
 
 #### Attribute number
 
 \*DEPRECATED\* Use the \`code\` attribute to provide an element
 reference number.
 
-Close
-
-×
-
 #### Attribute base
 
 Identifies the element data type
-
-Close
-
-×
 
 #### Attribute scale
 
@@ -341,17 +218,9 @@ For numeric base types only, scale is the number of digits to the right
 of an implied decimal point. When not specified, the default value of
 zero is used (i.e. the data type is integer)
 
-Close
-
-×
-
 #### Element sequence
 
 The ordered elements and syntax restrictions for a composite element.
-
-Close
-
-×
 
 #### Element any
 
@@ -360,43 +229,23 @@ composite type up to the maximum number given by maxOccurs. The value of
 minOccurs defines the number of undefined component elements that MUST
 occur in the composite.
 
-Close
-
-×
-
 #### Attribute name
 
 Code used to uniquely identify a composite element definition to be
 referenced by segmentType elements within this schema. This value will
 be returned by an EDIStreamReader's \`getReferenceCode\` method.
 
-Close
-
-×
-
 #### Element segmentType
 
 Used to declare a segment
-
-Close
-
-×
 
 #### Element sequence
 
 The ordered elements, components, and syntax restrictions for a segment.
 
-Close
-
-×
-
 #### Element element
 
 Defines a reference to a standard element definition.
-
-Close
-
-×
 
 #### Element any
 
@@ -405,10 +254,6 @@ segment type up to the maximum number given by maxOccurs. The value of
 minOccurs defines the number of undefined elements that MUST occur in
 the segment at this position. Elements that repeat may occur up to 99
 times and are not affected by the value of the maxOccurs attribute.
-
-Close
-
-×
 
 #### Attribute name
 
