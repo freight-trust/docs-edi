@@ -1,53 +1,62 @@
- EDI Schema Documentation    /\* prettier-ignore-start \*/ /\* XS3P specific CSS \*/ body { background-color: #fff; padding-top: 50px; } .nav > li.active { background-color: #fff; } .nav > li > a:hover { background-color: #ccc; } code { color: #333; } .container-fluid { padding: 15px 15px; } .nav-sub-item > a { padding-left: 30px !important; } a.name { padding-top: 65px; } h3.xs3p-subsection-heading { margin-bottom: 30px; } section, #top { margin-top: -65px; padding-top: 65px; } pre { padding: 5px; } .xs3p-sidenav { padding-top: 10px; padding-bottom: 10px; background-color: #eee; border-radius: 10px; } .xs3p-navbar-title { color: #fff !important; font-weight: bold; } .xs3p-in-panel-table { margin-bottom: 0px; } .xs3p-sidebar { position: static; } .xs3p-collapse-button { font-size: 8pt; } .panel-heading .xs3p-panel-title:after { font-family: "Glyphicons Halflings"; content: "\\e114"; float: left; color: grey; margin-right: 10px; } .panel-heading .xs3p-panel-title.collapsed:after { content: "\\e080"; } .panel-info > .panel-heading .xs3p-panel-title:after { color: white; } .xs3p-panel-help { color: #cccccc; cursor: pointer; } .panel-group { margin-bottom: 20px; } .btn-doc { padding: 0px; border: 0px none; background: none repeat scroll 0% 0% transparent; line-height: 1; font-size: 12px; } .unpre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; white-space: normal; word-break: normal; word-wrap: normal; } .popover { max-width: 400px; } /\* <!-- Syntax highlighting --> \*/ .codehilite .err { color: #fff; background-color: #d2322d; font-weight: bold; } /\* Error \*/ .codehilite .c { color: #999; } .codehilite .cs { color: #999; font-style: italic; } .codehilite .nt { color: #2f6f9f; } .codehilite .nn { color: #39b3d7; } .codehilite .na { color: #47a447; } .codehilite .s { color: #d2322d; } .codehilite a { color: inherit !important; text-decoration: underline !important; } .codehilite a:hover { opacity: 0.7 !important; } @media (min-width: 992px) { .xs3p-sidebar { position: fixed; top: 65px; width: 22%; } } /\* prettier-ignore-end \*/   
+<span class="sr-only">Toggle navigation</span><span class="icon-bar">
+</span><span class="icon-bar"> </span><span class="icon-bar"> </span>
 
-Toggle navigation EDI Schema Documentation
+<span class="navbar-brand xs3p-navbar-title">EDI Schema
+Documentation</span>
 
-*   [Schema Document Properties](#SchemaProperties)
-*   [Global Declarations](#SchemaDeclarations)
-*   [Element: **compositeType**](#element_compositeType)
-*   [Element: **description**](#element_description)
-*   [Element: **elementType**](#element_elementType)
-*   [Element: **enumeration**](#element_enumeration)
-*   [Element: **implementation**](#element_implementation)
-*   [Element: **include**](#element_include)
-*   [Element: **interchange**](#element_interchange)
-*   [Element: **schema**](#element_schema)
-*   [Element: **segmentType**](#element_segmentType)
-*   [Element: **syntax**](#element_syntax)
-*   [Element: **transaction**](#element_transaction)
-*   [Global Definitions](#SchemaDefinitions)
-*   [Attribute Group: **implementationAttributeGroup**](#attributeGroup_implementationAttributeGroup)
-*   [Attribute Group: **lengthAttributeGroup**](#attributeGroup_lengthAttributeGroup)
-*   [Attribute Group: **occursAttributeGroup**](#attributeGroup_occursAttributeGroup)
-*   [Attribute Group: **referenceAttributeGroup**](#attributeGroup_referenceAttributeGroup)
-*   [Attribute Group: **versionAttributeGroup**](#attributeGroup_versionAttributeGroup)
-*   [Complex Type: **anyElementType**](#type_anyElementType)
-*   [Complex Type: **baseType**](#type_baseType)
-*   [Complex Type: **compositeImpl**](#type_compositeImpl)
-*   [Complex Type: **compositeStandard**](#type_compositeStandard)
-*   [Complex Type: **controlType**](#type_controlType)
-*   [Complex Type: **elementImpl**](#type_elementImpl)
-*   [Complex Type: **elementStandard**](#type_elementStandard)
-*   [Complex Type: **groupControlType**](#type_groupControlType)
-*   [Complex Type: **loopBase**](#type_loopBase)
-*   [Complex Type: **loopImpl**](#type_loopImpl)
-*   [Complex Type: **loopStandard**](#type_loopStandard)
-*   [Complex Type: **segmentImpl**](#type_segmentImpl)
-*   [Complex Type: **segmentStandard**](#type_segmentStandard)
-*   [Complex Type: **transactionControlType**](#type_transactionControlType)
-*   [Simple Type: **discriminatorType**](#type_discriminatorType)
-*   [Simple Type: **elementBaseType**](#type_elementBaseType)
-*   [Simple Type: **nameType**](#type_nameType)
-*   [Simple Type: **positionType**](#type_positionType)
-*   [Simple Type: **syntaxType**](#type_syntaxType)
-*   [Simple Type: **useType**](#type_useType)
-*   [Glossary](#Glossary)
+-   [Schema Document Properties](#SchemaProperties)
+-   [Global Declarations](#SchemaDeclarations)
+-   [Element: **compositeType**](#element_compositeType)
+-   [Element: **description**](#element_description)
+-   [Element: **elementType**](#element_elementType)
+-   [Element: **enumeration**](#element_enumeration)
+-   [Element: **implementation**](#element_implementation)
+-   [Element: **include**](#element_include)
+-   [Element: **interchange**](#element_interchange)
+-   [Element: **schema**](#element_schema)
+-   [Element: **segmentType**](#element_segmentType)
+-   [Element: **syntax**](#element_syntax)
+-   [Element: **transaction**](#element_transaction)
+-   [Global Definitions](#SchemaDefinitions)
+-   [Attribute Group:
+    **implementationAttributeGroup**](#attributeGroup_implementationAttributeGroup)
+-   [Attribute Group:
+    **lengthAttributeGroup**](#attributeGroup_lengthAttributeGroup)
+-   [Attribute Group:
+    **occursAttributeGroup**](#attributeGroup_occursAttributeGroup)
+-   [Attribute Group:
+    **referenceAttributeGroup**](#attributeGroup_referenceAttributeGroup)
+-   [Attribute Group:
+    **versionAttributeGroup**](#attributeGroup_versionAttributeGroup)
+-   [Complex Type: **anyElementType**](#type_anyElementType)
+-   [Complex Type: **baseType**](#type_baseType)
+-   [Complex Type: **compositeImpl**](#type_compositeImpl)
+-   [Complex Type: **compositeStandard**](#type_compositeStandard)
+-   [Complex Type: **controlType**](#type_controlType)
+-   [Complex Type: **elementImpl**](#type_elementImpl)
+-   [Complex Type: **elementStandard**](#type_elementStandard)
+-   [Complex Type: **groupControlType**](#type_groupControlType)
+-   [Complex Type: **loopBase**](#type_loopBase)
+-   [Complex Type: **loopImpl**](#type_loopImpl)
+-   [Complex Type: **loopStandard**](#type_loopStandard)
+-   [Complex Type: **segmentImpl**](#type_segmentImpl)
+-   [Complex Type: **segmentStandard**](#type_segmentStandard)
+-   [Complex Type:
+    **transactionControlType**](#type_transactionControlType)
+-   [Simple Type: **discriminatorType**](#type_discriminatorType)
+-   [Simple Type: **elementBaseType**](#type_elementBaseType)
+-   [Simple Type: **nameType**](#type_nameType)
+-   [Simple Type: **positionType**](#type_positionType)
+-   [Simple Type: **syntaxType**](#type_syntaxType)
+-   [Simple Type: **useType**](#type_useType)
+-   [Glossary](#Glossary)
 
 ×
 
 #### Attribute minOccurs
 
-The minimum number of times an undefined element may occur at the declared location in the EDI structure.
+The minimum number of times an undefined element may occur at the
+declared location in the EDI structure.
 
 Close
 
@@ -55,7 +64,8 @@ Close
 
 #### Attribute maxOccurs
 
-The maximum number of times an undefined element may occur at the declared location in the EDI structure.
+The maximum number of times an undefined element may occur at the
+declared location in the EDI structure.
 
 Close
 
@@ -87,7 +97,8 @@ Close
 
 #### Attribute minOccurs
 
-The minimum number of times a type may occur at the declared location in the EDI structure.
+The minimum number of times a type may occur at the declared location in
+the EDI structure.
 
 Close
 
@@ -95,7 +106,8 @@ Close
 
 #### Attribute maxOccurs
 
-The maximum number of times a type may occur at the declared location in the EDI structure.
+The maximum number of times a type may occur at the declared location in
+the EDI structure.
 
 Close
 
@@ -119,7 +131,8 @@ Close
 
 #### Attribute minOccurs
 
-The minimum number of times a type may occur at the declared location in the EDI structure.
+The minimum number of times a type may occur at the declared location in
+the EDI structure.
 
 Close
 
@@ -127,7 +140,8 @@ Close
 
 #### Attribute maxOccurs
 
-The maximum number of times a type may occur at the declared location in the EDI structure.
+The maximum number of times a type may occur at the declared location in
+the EDI structure.
 
 Close
 
@@ -151,7 +165,9 @@ Close
 
 #### Attribute type
 
-The name of the standard segment used at this position in the implementation. Must be a valid segment name that occurs in the same standard loop.
+The name of the standard segment used at this position in the
+implementation. Must be a valid segment name that occurs in the same
+standard loop.
 
 Close
 
@@ -159,7 +175,8 @@ Close
 
 #### Attribute code
 
-Code used to identify a segment within a loop. May be useful when occurrences of a standard segment contain distinct information.
+Code used to identify a segment within a loop. May be useful when
+occurrences of a standard segment contain distinct information.
 
 Close
 
@@ -167,7 +184,12 @@ Close
 
 #### Attribute discriminator
 
-The element position in the segment used to identify an occurrence of a standard segment from other implementation occurrences. The element identified by the position given in this attribute must also specify an enumeration of values used only by this implementation and not used by any other implementations of the standard segment in the same implementation loop.
+The element position in the segment used to identify an occurrence of a
+standard segment from other implementation occurrences. The element
+identified by the position given in this attribute must also specify an
+enumeration of values used only by this implementation and not used by
+any other implementations of the standard segment in the same
+implementation loop.
 
 Close
 
@@ -175,7 +197,10 @@ Close
 
 #### Attribute minOccurs
 
-The minimum number of times a loop may repeat. A value of 0 (zero) indicates that the loop is optional. When used in a loop defined within an implementation, the value may not be less than the value set on the standard loop referenced by the implementation loop's 'type' attribute.
+The minimum number of times a loop may repeat. A value of 0 (zero)
+indicates that the loop is optional. When used in a loop defined within
+an implementation, the value may not be less than the value set on the
+standard loop referenced by the implementation loop's 'type' attribute.
 
 Close
 
@@ -183,7 +208,10 @@ Close
 
 #### Attribute maxOccurs
 
-The maximum number of times a loop may repeat. When used in a loop defined within an implementation, the value may not be greater than the value set on the standard loop referenced by the implementation loop's 'type' attribute.
+The maximum number of times a loop may repeat. When used in a loop
+defined within an implementation, the value may not be greater than the
+value set on the standard loop referenced by the implementation loop's
+'type' attribute.
 
 Close
 
@@ -215,7 +243,8 @@ Close
 
 #### Attribute type
 
-The identifier (code attribute) of the standard loop this loop implements.
+The identifier (code attribute) of the standard loop this loop
+implements.
 
 Close
 
@@ -223,7 +252,8 @@ Close
 
 #### Attribute code
 
-Code used to uniquely identify a loop implementation within the transaction/message implementation.
+Code used to uniquely identify a loop implementation within the
+transaction/message implementation.
 
 Close
 
@@ -231,7 +261,12 @@ Close
 
 #### Attribute discriminator
 
-The element position in the loop's first segment used to identify an implementation of a standard loop from other implementations. The element identified by the position given in this attribute must also specify an enumeration of values used only by this implementation and not used by any other implementations of the standard loop at the same level of the transaction.
+The element position in the loop's first segment used to identify an
+implementation of a standard loop from other implementations. The
+element identified by the position given in this attribute must also
+specify an enumeration of values used only by this implementation and
+not used by any other implementations of the standard loop at the same
+level of the transaction.
 
 Close
 
@@ -247,7 +282,8 @@ Close
 
 #### Element sequence
 
-The ordered list of segments and sub-loops contained at the top-level of this transaction.
+The ordered list of segments and sub-loops contained at the top-level of
+this transaction.
 
 Close
 
@@ -255,7 +291,8 @@ Close
 
 #### Element sequence
 
-The ordered list of segments and sub-loops contained at the top-level of a transaction implementation.
+The ordered list of segments and sub-loops contained at the top-level of
+a transaction implementation.
 
 Close
 
@@ -263,7 +300,10 @@ Close
 
 #### Attribute name
 
-Code used to uniquely identify an element definition to be referenced by compositeType and segmentType elements within this schema. This value will be returned by an EDIStreamReader's \`getReferenceCode\` method when no \`code\` attribute has been specified.
+Code used to uniquely identify an element definition to be referenced by
+compositeType and segmentType elements within this schema. This value
+will be returned by an EDIStreamReader's \`getReferenceCode\` method
+when no \`code\` attribute has been specified.
 
 Close
 
@@ -271,7 +311,8 @@ Close
 
 #### Attribute code
 
-Code used to identify an element externally. This value will be returned by an EDIStreamReader's \`getReferenceCode\` method.
+Code used to identify an element externally. This value will be returned
+by an EDIStreamReader's \`getReferenceCode\` method.
 
 Close
 
@@ -279,7 +320,8 @@ Close
 
 #### Attribute number
 
-\*DEPRECATED\* Use the \`code\` attribute to provide an element reference number.
+\*DEPRECATED\* Use the \`code\` attribute to provide an element
+reference number.
 
 Close
 
@@ -295,7 +337,9 @@ Close
 
 #### Attribute scale
 
-For numeric base types only, scale is the number of digits to the right of an implied decimal point. When not specified, the default value of zero is used (i.e. the data type is integer)
+For numeric base types only, scale is the number of digits to the right
+of an implied decimal point. When not specified, the default value of
+zero is used (i.e. the data type is integer)
 
 Close
 
@@ -311,7 +355,10 @@ Close
 
 #### Element any
 
-May be used to declare that any component element may occur in this composite type up to the maximum number given by maxOccurs. The value of minOccurs defines the number of undefined component elements that MUST occur in the composite.
+May be used to declare that any component element may occur in this
+composite type up to the maximum number given by maxOccurs. The value of
+minOccurs defines the number of undefined component elements that MUST
+occur in the composite.
 
 Close
 
@@ -319,7 +366,9 @@ Close
 
 #### Attribute name
 
-Code used to uniquely identify a composite element definition to be referenced by segmentType elements within this schema. This value will be returned by an EDIStreamReader's \`getReferenceCode\` method.
+Code used to uniquely identify a composite element definition to be
+referenced by segmentType elements within this schema. This value will
+be returned by an EDIStreamReader's \`getReferenceCode\` method.
 
 Close
 
@@ -351,7 +400,11 @@ Close
 
 #### Element any
 
-May be used to declare that any element or composite may occur in this segment type up to the maximum number given by maxOccurs. The value of minOccurs defines the number of undefined elements that MUST occur in the segment at this position. Elements that repeat may occur up to 99 times and are not affected by the value of the maxOccurs attribute.
+May be used to declare that any element or composite may occur in this
+segment type up to the maximum number given by maxOccurs. The value of
+minOccurs defines the number of undefined elements that MUST occur in
+the segment at this position. Elements that repeat may occur up to 99
+times and are not affected by the value of the maxOccurs attribute.
 
 Close
 
@@ -359,2787 +412,2695 @@ Close
 
 #### Attribute name
 
-Name of the segment. Also referred to as the segment's tag. This is the two or three character string used to identify a segment.
+Name of the segment. Also referred to as the segment's tag. This is the
+two or three character string used to identify a segment.
 
 Close
 
-EDI Schema Documentation
-========================
+<span id="top">EDI Schema Documentation</span>
+==============================================
 
-Schema Document Properties
---------------------------
+<span id="SchemaProperties">Schema Document Properties</span>
+-------------------------------------------------------------
 
-#### [Properties](#schema-properties-table-collapse)
+#### <a href="#schema-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-[Target Namespace](#term_TargetNS "Look up 'Target Namespace' in glossary")
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><a href="#term_TargetNS" title="Look up &#39;Target Namespace&#39; in glossary">Target Namespace</a></td>
+<td><span class="targetNS">http://freighttrust.io/EDISchema/v4</span></td>
+</tr>
+<tr class="even">
+<td>Element and Attribute Namespaces</td>
+<td><ul class="incremental">
+<li>Global element and attribute declarations belong to this schema's target namespace.</li>
+<li>By default, local element declarations belong to this schema's target namespace.</li>
+<li>By default, local attribute declarations have no namespace.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-http://freighttrust.io/EDISchema/v4
-
-Element and Attribute Namespaces
-
-*   Global element and attribute declarations belong to this schema's target namespace.
-*   By default, local element declarations belong to this schema's target namespace.
-*   By default, local attribute declarations have no namespace.
-
-#### [Documentation](#schema-doc-panel-collapse)
+#### <a href="#schema-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [Declared Namespaces](#schema-declared-namespaces-collapse)
+#### <a href="#schema-declared-namespaces-collapse" class="xs3p-panel-title">Declared Namespaces</a>
 
-Prefix
+<table class="table table-striped xs3p-in-panel-table">
+<thead>
+<tr class="header">
+<th>Prefix</th>
+<th>Namespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span id="ns_">Default namespace</span></td>
+<td>http://www.w3.org/2001/XMLSchema</td>
+</tr>
+<tr class="even">
+<td><span id="ns_xml">xml</span></td>
+<td>http://www.w3.org/XML/1998/namespace</td>
+</tr>
+<tr class="odd">
+<td><span id="ns_tns">tns</span></td>
+<td><span class="targetNS">http://freighttrust.io/EDISchema/v4</span></td>
+</tr>
+</tbody>
+</table>
 
-Namespace
+#### <a href="#schema-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Default namespace
+    <schema targetNamespace="http://freighttrust.io/EDISchema/v4" elementFormDefault="qualified">
+    ...
+    </schema>
 
-http://www.w3.org/2001/XMLSchema
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-xml
+------------------------------------------------------------------------
 
-http://www.w3.org/XML/1998/namespace
+<span id="SchemaDeclarations">Global Declarations</span>
+--------------------------------------------------------
 
-tns
+### Element: <span id="element_compositeType" class="name">compositeType</span>
 
-http://freighttrust.io/EDISchema/v4
+#### <a href="#element_compositeType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### [Schema Component Representation](#schema-schemaComponent-collapse)
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>compositeType</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-<schema targetNamespace="http://freighttrust.io/EDISchema/v4" elementFormDefault="qualified"\>
-...
-</schema>
-
-[](#top "Go to top of page")
-
-* * *
-
-Global Declarations
--------------------
-
-### Element: compositeType
-
-#### [Properties](#element_compositeType-properties-table-collapse)
-
-Name
-
-compositeType
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_compositeType-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#element_compositeType-instance-table-collapse)
-
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):compositeType
- title="string" \[0..1\]
- name="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[nameType](#type_nameType "Jump to "nameType" type definition.")" \[1\]
-
-×
-
-#### Attribute name
-
-                Code used to uniquely identify a composite element definition to be referenced by
-                segmentType elements within this schema. This
-                value will be returned by an EDIStreamReader's \`getReferenceCode\` method.
-              
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[1..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementStandard](#type_elementStandard "Jump to "elementStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> \[1..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):any> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[anyElementType](#type_anyElementType "Jump to "anyElementType" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):any> \[1\] 
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> \[0..\*\]
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):compositeType>
-
-#### [Schema Component Representation](#element_compositeType-schemaComponent-collapse)
-
-<element name="compositeType"\>
-   <complexType\>
-      <complexContent\>
-         <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-            <sequence\>
-               <element name="sequence"\>
-                  <complexType\>
-                     <choice minOccurs="1" maxOccurs="unbounded"\>
-                        <element name="element" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementStandard](#type_elementStandard "Jump to "elementStandard" type definition.")" minOccurs="1" maxOccurs="unbounded"/>
-                        <element name="any" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[anyElementType](#type_anyElementType "Jump to "anyElementType" type definition.")"/>
-                     </choice>
-                  </complexType>
-               </element>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-            </sequence>
-            <attribute name="name" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[nameType](#type_nameType "Jump to "nameType" type definition.")" use="required"/>
-         </extension>
-      </complexContent>
-   </complexType>
-</element>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Element: description
-
-#### [Properties](#element_description-properties-table-collapse)
-
-Name
-
-description
-
-Type
-
-string
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_description-doc-panel-collapse)
+#### <a href="#element_compositeType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#element_description-instance-table-collapse)
+#### <a href="#element_compositeType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):description> string </[tns](#ns_tns "Find out namespace of 'tns' prefix"):description>
+    <tns:compositeType
+     title="string" [0..1]
+     name="tns:nameType" [1]×Attribute name
+                    Code used to uniquely identify a composite element definition to be referenced by
+                    segmentType elements within this schema. This
+                    value will be returned by an EDIStreamReader's `getReferenceCode` method.
+                   Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [1]   
+          Start Choice [1..*]
+             <tns:element> tns:elementStandard </tns:element> [1..*]
+             <tns:any> tns:anyElementType </tns:any> [1]  
+          End Choice
+       </tns:sequence>
+       <tns:syntax> ... </tns:syntax> [0..*]
+    </tns:compositeType>
 
-#### [Schema Component Representation](#element_description-schemaComponent-collapse)
+#### <a href="#element_compositeType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<element name="description" type="string"/>
+    <element name="compositeType">
+       <complexType>
+          <complexContent>
+             <extension base="tns:baseType">
+                <sequence>
+                   <element name="sequence">
+                      <complexType>
+                         <choice minOccurs="1" maxOccurs="unbounded">
+                            <element name="element" type="tns:elementStandard" minOccurs="1" maxOccurs="unbounded"/>
+                            <element name="any" type="tns:anyElementType"/>
+                         </choice>
+                      </complexType>
+                   </element>
+                   <element ref="tns:syntax" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+                <attribute name="name" type="tns:nameType" use="required"/>
+             </extension>
+          </complexContent>
+       </complexType>
+    </element>
 
-[](#top "Go to top of page")
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-* * *
+------------------------------------------------------------------------
 
-### Element: elementType
+### Element: <span id="element_description" class="name">description</span>
 
-#### [Properties](#element_elementType-properties-table-collapse)
+#### <a href="#element_description-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Name
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>description</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td><span class="type">string</span></td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-elementType
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_elementType-doc-panel-collapse)
+#### <a href="#element_description-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#element_elementType-instance-table-collapse)
-
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):elementType
- title="string" \[0..1\]
- name="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[nameType](#type_nameType "Jump to "nameType" type definition.")" \[1\]
-
-×
-
-#### Attribute name
-
-                Code used to uniquely identify an element definition to be referenced by
-                compositeType and segmentType elements within this schema.
-                This value will be returned by an EDIStreamReader's \`getReferenceCode\` method
-                when no \`code\` attribute has been specified.
-              
-
-Close
-
- 
- code="NMTOKEN" \[0..1\]
-
-×
-
-#### Attribute code
-
-                Code used to identify an element externally. This value will
-                be returned by an EDIStreamReader's \`getReferenceCode\` method.
-              
-
-Close
-
- 
- number="nonNegativeInteger (1 <= _value_ <= 9999)" \[0..1\]
-
-×
-
-#### Attribute number
-
-\*DEPRECATED\* Use the \`code\` attribute to provide an element reference number.
-
-Close
-
- 
- base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementBaseType](#type_elementBaseType "Jump to "elementBaseType" type definition.")" \[0..1\]
-
-×
-
-#### Attribute base
-
-                Identifies the element data type
-              
-
-Close
-
- 
- scale="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute scale
-
-                For numeric base types only, scale is the number of digits to the right of an implied decimal point. When not specified, the
-                default value of zero is used (i.e. the data type is integer)
-              
-
-Close
-
- 
- minLength="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minLength
-
-          The minimum length allowed for an element value to be valid.
-        
-
-Close
-
- 
- maxLength="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxLength
-
-          The maximum length allowed for an element value to be valid.
-        
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):version
-    minVersion="token" \[0..1\]
-
-×
-
-#### Attribute minVersion
-
-          The minimum transaction version this schema version applies to.
-        
-
-Close
-
- 
-    maxVersion="token" \[0..1\]
-
-×
-
-#### Attribute maxVersion
-
-          The maximum transaction version this schema version applies to.
-        
-
-Close
-
- 
-    minLength="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minLength
-
-          The minimum length allowed for an element value to be valid.
-        
-
-Close
-
- 
-    maxLength="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxLength
-
-          The maximum length allowed for an element value to be valid.
-        
-
-Close
-
- 
-   \> \[0..\*\] 
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")\> \[0..1\]
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):version>
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):elementType>
-
-#### [Schema Component Representation](#element_elementType-schemaComponent-collapse)
-
-<element name="elementType"\>
-   <complexType\>
-      <complexContent\>
-         <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-            <sequence\>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")" minOccurs="0"/>
-               <element name="version" minOccurs="0" maxOccurs="unbounded"\>
-                  <complexType\>
-                     <sequence\>
-                        <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")" minOccurs="0"/>
-                     </sequence>
-                     <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[versionAttributeGroup](#attributeGroup_versionAttributeGroup "Jump to "versionAttributeGroup" attribute group definition.")"/>
-                     <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[lengthAttributeGroup](#attributeGroup_lengthAttributeGroup "Jump to "lengthAttributeGroup" attribute group definition.")"/>
-                  </complexType>
-               </element>
-            </sequence>
-            <attribute name="name" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[nameType](#type_nameType "Jump to "nameType" type definition.")" use="required"/>
-            <attribute name="code" type="NMTOKEN" use="optional"/>
-            <attribute name="number"\>
-               <simpleType\>
-                  <restriction base="nonNegativeInteger"\>
-                     <minInclusive value="1"/>
-                     <maxInclusive value="9999"/>
-                  </restriction>
-               </simpleType>
-            </attribute>
-            <attribute name="base" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementBaseType](#type_elementBaseType "Jump to "elementBaseType" type definition.")" use="optional" default="string"/>
-            <attribute name="scale" type="nonNegativeInteger" use="optional" default="0"/>
-            <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[lengthAttributeGroup](#attributeGroup_lengthAttributeGroup "Jump to "lengthAttributeGroup" attribute group definition.")"/>
-         </extension>
-      </complexContent>
-   </complexType>
-</element>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Element: enumeration
-
-#### [Properties](#element_enumeration-properties-table-collapse)
-
-Name
-
-enumeration
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_enumeration-doc-panel-collapse)
+#### <a href="#element_description-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <tns:description> string </tns:description>
+
+#### <a href="#element_description-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <element name="description" type="string"/>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Element: <span id="element_elementType" class="name">elementType</span>
+
+#### <a href="#element_elementType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>elementType</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#element_elementType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#element_enumeration-instance-table-collapse)
+#### <a href="#element_elementType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):enumeration\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):value
-    title="string" \[0..1\]
-   \> \[1..\*\] 
-       token
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):value>
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):enumeration>
+    <tns:elementType
+     title="string" [0..1]
+     name="tns:nameType" [1]×Attribute name
+                    Code used to uniquely identify an element definition to be referenced by
+                    compositeType and segmentType elements within this schema.
+                    This value will be returned by an EDIStreamReader's `getReferenceCode` method
+                    when no `code` attribute has been specified.
+                   Close  
+     code="NMTOKEN" [0..1]×Attribute code
+                    Code used to identify an element externally. This value will
+                    be returned by an EDIStreamReader's `getReferenceCode` method.
+                   Close  
+     number="nonNegativeInteger (1 <= value <= 9999)" [0..1]×Attribute number*DEPRECATED* Use the `code` attribute to provide an element reference number. Close  
+     base="tns:elementBaseType" [0..1]×Attribute base
+                    Identifies the element data type
+                   Close  
+     scale="nonNegativeInteger" [0..1]×Attribute scale
+                    For numeric base types only, scale is the number of digits to the right of an implied decimal point. When not specified, the
+                    default value of zero is used (i.e. the data type is integer)
+                   Close  
+     minLength="nonNegativeInteger" [0..1]×Attribute minLength
+              The minimum length allowed for an element value to be valid.
+             Close  
+     maxLength="nonNegativeInteger" [0..1]×Attribute maxLength
+              The maximum length allowed for an element value to be valid.
+             Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:enumeration> ... </tns:enumeration> [0..1]
+       <tns:version
+        minVersion="token" [0..1]×Attribute minVersion
+              The minimum transaction version this schema version applies to.
+             Close  
+        maxVersion="token" [0..1]×Attribute maxVersion
+              The maximum transaction version this schema version applies to.
+             Close  
+        minLength="nonNegativeInteger" [0..1]×Attribute minLength
+              The minimum length allowed for an element value to be valid.
+             Close  
+        maxLength="nonNegativeInteger" [0..1]×Attribute maxLength
+              The maximum length allowed for an element value to be valid.
+             Close  
+       > [0..*] 
+          <tns:enumeration> ... </tns:enumeration> [0..1]
+       </tns:version>
+    </tns:elementType>
 
-#### [Schema Component Representation](#element_enumeration-schemaComponent-collapse)
+#### <a href="#element_elementType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<element name="enumeration"\>
-   <complexType\>
-      <sequence\>
-         <element name="value" maxOccurs="unbounded"\>
-            <complexType\>
-               <simpleContent\>
-                  <extension base="token"\>
-                     <attribute name="title" type="string"/>
-                  </extension>
-               </simpleContent>
-            </complexType>
-         </element>
-      </sequence>
-   </complexType>
-</element>
+    <element name="elementType">
+       <complexType>
+          <complexContent>
+             <extension base="tns:baseType">
+                <sequence>
+                   <element ref="tns:enumeration" minOccurs="0"/>
+                   <element name="version" minOccurs="0" maxOccurs="unbounded">
+                      <complexType>
+                         <sequence>
+                            <element ref="tns:enumeration" minOccurs="0"/>
+                         </sequence>
+                         <attributeGroup ref="tns:versionAttributeGroup"/>
+                         <attributeGroup ref="tns:lengthAttributeGroup"/>
+                      </complexType>
+                   </element>
+                </sequence>
+                <attribute name="name" type="tns:nameType" use="required"/>
+                <attribute name="code" type="NMTOKEN" use="optional"/>
+                <attribute name="number">
+                   <simpleType>
+                      <restriction base="nonNegativeInteger">
+                         <minInclusive value="1"/>
+                         <maxInclusive value="9999"/>
+                      </restriction>
+                   </simpleType>
+                </attribute>
+                <attribute name="base" type="tns:elementBaseType" use="optional" default="string"/>
+                <attribute name="scale" type="nonNegativeInteger" use="optional" default="0"/>
+                <attributeGroup ref="tns:lengthAttributeGroup"/>
+             </extension>
+          </complexContent>
+       </complexType>
+    </element>
 
-[](#top "Go to top of page")
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-* * *
+------------------------------------------------------------------------
 
-### Element: implementation
+### Element: <span id="element_enumeration" class="name">enumeration</span>
 
-#### [Properties](#element_implementation-properties-table-collapse)
+#### <a href="#element_enumeration-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Name
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>enumeration</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-implementation
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_implementation-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#element_implementation-instance-table-collapse)
-
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):implementation
- title="string" \[0..1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[1..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentImpl](#type_segmentImpl "Jump to "segmentImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> \[1\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopImpl](#type_loopImpl "Jump to "loopImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> \[0..1\]
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):implementation>
-
-#### [Schema Component Representation](#element_implementation-schemaComponent-collapse)
-
-<element name="implementation"\>
-   <complexType\>
-      <complexContent\>
-         <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-            <sequence\>
-               <element name="sequence"\>
-                  <complexType\>
-                     <choice maxOccurs="unbounded"\>
-                        <element name="segment" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentImpl](#type_segmentImpl "Jump to "segmentImpl" type definition.")"/>
-                        <element name="loop" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopImpl](#type_loopImpl "Jump to "loopImpl" type definition.")" minOccurs="0"/>
-                     </choice>
-                  </complexType>
-               </element>
-            </sequence>
-         </extension>
-      </complexContent>
-   </complexType>
-</element>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Element: include
-
-#### [Properties](#element_include-properties-table-collapse)
-
-Name
-
-include
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_include-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#element_include-instance-table-collapse)
-
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):include
- schemaLocation="anyURI" \[1\]
-/> 
-
-#### [Schema Component Representation](#element_include-schemaComponent-collapse)
-
-<element name="include"\>
-   <complexType\>
-      <attribute name="schemaLocation" type="anyURI" use="required"/>
-   </complexType>
-</element>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Element: interchange
-
-#### [Properties](#element_interchange-properties-table-collapse)
-
-Name
-
-interchange
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_interchange-doc-panel-collapse)
+#### <a href="#element_enumeration-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#element_interchange-instance-table-collapse)
+#### <a href="#element_enumeration-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):interchange
- title="string" \[0..1\]
- header="NCName" \[1\]
- trailer="NCName" \[1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[1\] 
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> \[0..\*\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):group> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[groupControlType](#type_groupControlType "Jump to "groupControlType" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):group> \[0..1\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):transaction> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[transactionControlType](#type_transactionControlType "Jump to "transactionControlType" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):transaction> \[0..1\]
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> \[0..\*\]
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):interchange>
+    <tns:enumeration>
+       <tns:value
+        title="string" [0..1]
+       > [1..*] 
+           token
+       </tns:value>
+    </tns:enumeration>
 
-#### [Schema Component Representation](#element_interchange-schemaComponent-collapse)
+#### <a href="#element_enumeration-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<element name="interchange"\>
-   <complexType\>
-      <complexContent\>
-         <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[controlType](#type_controlType "Jump to "controlType" type definition.")"\>
-            <sequence\>
-               <element name="sequence"\>
-                  <complexType\>
-                     <sequence\>
-                        <element name="segment" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.")" minOccurs="0" maxOccurs="unbounded"/>
-                        <element name="group" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[groupControlType](#type_groupControlType "Jump to "groupControlType" type definition.")" minOccurs="0"/>
-                        <element name="transaction" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[transactionControlType](#type_transactionControlType "Jump to "transactionControlType" type definition.")" minOccurs="0"/>
-                     </sequence>
-                  </complexType>
-               </element>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-            </sequence>
-         </extension>
-      </complexContent>
-   </complexType>
-</element>
+    <element name="enumeration">
+       <complexType>
+          <sequence>
+             <element name="value" maxOccurs="unbounded">
+                <complexType>
+                   <simpleContent>
+                      <extension base="token">
+                         <attribute name="title" type="string"/>
+                      </extension>
+                   </simpleContent>
+                </complexType>
+             </element>
+          </sequence>
+       </complexType>
+    </element>
 
-[](#top "Go to top of page")
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-* * *
+------------------------------------------------------------------------
 
-### Element: schema
+### Element: <span id="element_implementation" class="name">implementation</span>
 
-#### [Properties](#element_schema-properties-table-collapse)
+#### <a href="#element_implementation-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Name
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>implementation</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-schema
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_schema-doc-panel-collapse)
+#### <a href="#element_implementation-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#element_schema-instance-table-collapse)
+#### <a href="#element_implementation-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):schema\>
+    <tns:implementation
+     title="string" [0..1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [1]   
+          Start Choice [1..*]
+             <tns:segment> tns:segmentImpl </tns:segment> [1]
+             <tns:loop> tns:loopImpl </tns:loop> [0..1]
+          End Choice
+       </tns:sequence>
+    </tns:implementation>
 
-×
+#### <a href="#element_implementation-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Element include
+    <element name="implementation">
+       <complexType>
+          <complexContent>
+             <extension base="tns:baseType">
+                <sequence>
+                   <element name="sequence">
+                      <complexType>
+                         <choice maxOccurs="unbounded">
+                            <element name="segment" type="tns:segmentImpl"/>
+                            <element name="loop" type="tns:loopImpl" minOccurs="0"/>
+                         </choice>
+                      </complexType>
+                   </element>
+                </sequence>
+             </extension>
+          </complexContent>
+       </complexType>
+    </element>
 
-Optional reference to another schema file to include.
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[include](#element_include "Jump to "include" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[include](#element_include "Jump to "include" element declaration.")\> \[0..\*\] 
-   Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[0..1\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[interchange](#element_interchange "Jump to "interchange" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[interchange](#element_interchange "Jump to "interchange" element declaration.")\> \[1\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[transaction](#element_transaction "Jump to "transaction" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[transaction](#element_transaction "Jump to "transaction" element declaration.")\> \[1\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementation](#element_implementation "Jump to "implementation" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementation](#element_implementation "Jump to "implementation" element declaration.")\> \[0..1\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementation](#element_implementation "Jump to "implementation" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementation](#element_implementation "Jump to "implementation" element declaration.")\> \[1\]
-   End Choice
-   Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[1..\*\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementType](#element_elementType "Jump to "elementType" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementType](#element_elementType "Jump to "elementType" element declaration.")\> \[1..\*\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeType](#element_compositeType "Jump to "compositeType" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeType](#element_compositeType "Jump to "compositeType" element declaration.")\> \[0..\*\]
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentType](#element_segmentType "Jump to "segmentType" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentType](#element_segmentType "Jump to "segmentType" element declaration.")\> \[1..\*\]
-   End Choice
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):schema>
+### Element: <span id="element_include" class="name">include</span>
 
-#### [Schema Component Representation](#element_schema-schemaComponent-collapse)
+#### <a href="#element_include-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<element name="schema"\>
-   <complexType\>
-      <sequence\>
-         <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[include](#element_include "Jump to "include" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-         <choice minOccurs="0"\>
-            <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[interchange](#element_interchange "Jump to "interchange" element declaration.")"/>
-            <sequence\>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[transaction](#element_transaction "Jump to "transaction" element declaration.")"/>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementation](#element_implementation "Jump to "implementation" element declaration.")" minOccurs="0"/>
-            </sequence>
-            <sequence\>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementation](#element_implementation "Jump to "implementation" element declaration.")"/>
-            </sequence>
-         </choice>
-         <choice id="typeChoice" maxOccurs="unbounded"\>
-            <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementType](#element_elementType "Jump to "elementType" element declaration.")" maxOccurs="unbounded"/>
-            <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeType](#element_compositeType "Jump to "compositeType" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-            <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentType](#element_segmentType "Jump to "segmentType" element declaration.")" maxOccurs="unbounded"/>
-         </choice>
-      </sequence>
-   </complexType>
-</element>
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>include</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-[](#top "Go to top of page")
+#### <a href="#element_include-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-* * *
+No documentation provided.
 
-### Element: segmentType
+#### <a href="#element_include-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### [Properties](#element_segmentType-properties-table-collapse)
+    <tns:include
+     schemaLocation="anyURI" [1]
+    /> 
 
-Name
+#### <a href="#element_include-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-segmentType
+    <element name="include">
+       <complexType>
+          <attribute name="schemaLocation" type="anyURI" use="required"/>
+       </complexType>
+    </element>
 
-Type
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Locally-defined complex type
+------------------------------------------------------------------------
 
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
+### Element: <span id="element_interchange" class="name">interchange</span>
 
-no
+#### <a href="#element_interchange-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>interchange</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-no
+#### <a href="#element_interchange-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### [Documentation](#element_segmentType-doc-panel-collapse)
+No documentation provided.
+
+#### <a href="#element_interchange-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <tns:interchange
+     title="string" [0..1]
+     header="NCName" [1]
+     trailer="NCName" [1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [1] 
+          <tns:segment> tns:segmentStandard </tns:segment> [0..*]
+          <tns:group> tns:groupControlType </tns:group> [0..1]
+          <tns:transaction> tns:transactionControlType </tns:transaction> [0..1]
+       </tns:sequence>
+       <tns:syntax> ... </tns:syntax> [0..*]
+    </tns:interchange>
+
+#### <a href="#element_interchange-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <element name="interchange">
+       <complexType>
+          <complexContent>
+             <extension base="tns:controlType">
+                <sequence>
+                   <element name="sequence">
+                      <complexType>
+                         <sequence>
+                            <element name="segment" type="tns:segmentStandard" minOccurs="0" maxOccurs="unbounded"/>
+                            <element name="group" type="tns:groupControlType" minOccurs="0"/>
+                            <element name="transaction" type="tns:transactionControlType" minOccurs="0"/>
+                         </sequence>
+                      </complexType>
+                   </element>
+                   <element ref="tns:syntax" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+             </extension>
+          </complexContent>
+       </complexType>
+    </element>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Element: <span id="element_schema" class="name">schema</span>
+
+#### <a href="#element_schema-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>schema</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#element_schema-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#element_schema-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <tns:schema>
+    ×Element includeOptional reference to another schema file to include. Close   <tns:include> ... </tns:include> [0..*]  
+       Start Choice [0..1]
+          <tns:interchange> ... </tns:interchange> [1]
+          <tns:transaction> ... </tns:transaction> [1]
+          <tns:implementation> ... </tns:implementation> [0..1]
+          <tns:implementation> ... </tns:implementation> [1]
+       End Choice
+       Start Choice [1..*]
+          <tns:elementType> ... </tns:elementType> [1..*]
+          <tns:compositeType> ... </tns:compositeType> [0..*]
+          <tns:segmentType> ... </tns:segmentType> [1..*]
+       End Choice
+    </tns:schema>
+
+#### <a href="#element_schema-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <element name="schema">
+       <complexType>
+          <sequence>
+             <element ref="tns:include" minOccurs="0" maxOccurs="unbounded"/>
+             <choice minOccurs="0">
+                <element ref="tns:interchange"/>
+                <sequence>
+                   <element ref="tns:transaction"/>
+                   <element ref="tns:implementation" minOccurs="0"/>
+                </sequence>
+                <sequence>
+                   <element ref="tns:implementation"/>
+                </sequence>
+             </choice>
+             <choice id="typeChoice" maxOccurs="unbounded">
+                <element ref="tns:elementType" maxOccurs="unbounded"/>
+                <element ref="tns:compositeType" minOccurs="0" maxOccurs="unbounded"/>
+                <element ref="tns:segmentType" maxOccurs="unbounded"/>
+             </choice>
+          </sequence>
+       </complexType>
+    </element>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Element: <span id="element_segmentType" class="name">segmentType</span>
+
+#### <a href="#element_segmentType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>segmentType</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#element_segmentType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 Used to declare a segment
 
-#### [XML Instance Representation](#element_segmentType-instance-table-collapse)
+#### <a href="#element_segmentType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):segmentType
- title="string" \[0..1\]
- name="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[nameType](#type_nameType "Jump to "nameType" type definition.") (_length_ <= 3)" \[1\]
+    <tns:segmentType
+     title="string" [0..1]
+     name="tns:nameType (length <= 3)" [1]×Attribute name
+                    Name of the segment. Also referred to as the segment's tag. This is the two or three
+                    character string used to identify a segment.
+                   Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [0..1]   
+          Start Choice [0..*]
+             <tns:element> tns:elementStandard </tns:element> [1]  
+             <tns:composite> tns:compositeStandard </tns:composite> [1]
+             <tns:any> tns:anyElementType </tns:any> [1]  
+          End Choice
+       </tns:sequence>
+       <tns:syntax> ... </tns:syntax> [0..*]
+    </tns:segmentType>
 
-×
+#### <a href="#element_segmentType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute name
+    <element name="segmentType">
+       <complexType>
+          <complexContent>
+             <extension base="tns:baseType">
+                <sequence>
+                   <element name="sequence" minOccurs="0">
+                      <complexType>
+                         <choice minOccurs="0" maxOccurs="unbounded">
+                            <element name="element" type="tns:elementStandard"/>
+                            <element name="composite" type="tns:compositeStandard"/>
+                            <element name="any" type="tns:anyElementType"/>
+                         </choice>
+                      </complexType>
+                   </element>
+                   <element ref="tns:syntax" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+                <attribute name="name" use="required">
+                   <simpleType>
+                      <restriction base="tns:nameType">
+                         <maxLength value="3"/>
+                      </restriction>
+                   </simpleType>
+                </attribute>
+             </extension>
+          </complexContent>
+       </complexType>
+    </element>
 
-                Name of the segment. Also referred to as the segment's tag. This is the two or three
-                character string used to identify a segment.
-              
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[0..1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[0..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementStandard](#type_elementStandard "Jump to "elementStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> \[1\] 
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):composite> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeStandard](#type_compositeStandard "Jump to "compositeStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):composite> \[1\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):any> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[anyElementType](#type_anyElementType "Jump to "anyElementType" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):any> \[1\] 
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> \[0..\*\]
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):segmentType>
+### Element: <span id="element_syntax" class="name">syntax</span>
 
-#### [Schema Component Representation](#element_segmentType-schemaComponent-collapse)
+#### <a href="#element_syntax-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<element name="segmentType"\>
-   <complexType\>
-      <complexContent\>
-         <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-            <sequence\>
-               <element name="sequence" minOccurs="0"\>
-                  <complexType\>
-                     <choice minOccurs="0" maxOccurs="unbounded"\>
-                        <element name="element" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementStandard](#type_elementStandard "Jump to "elementStandard" type definition.")"/>
-                        <element name="composite" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeStandard](#type_compositeStandard "Jump to "compositeStandard" type definition.")"/>
-                        <element name="any" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[anyElementType](#type_anyElementType "Jump to "anyElementType" type definition.")"/>
-                     </choice>
-                  </complexType>
-               </element>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-            </sequence>
-            <attribute name="name" use="required"\>
-               <simpleType\>
-                  <restriction base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[nameType](#type_nameType "Jump to "nameType" type definition.")"\>
-                     <maxLength value="3"/>
-                  </restriction>
-               </simpleType>
-            </attribute>
-         </extension>
-      </complexContent>
-   </complexType>
-</element>
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>syntax</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-[](#top "Go to top of page")
-
-* * *
-
-### Element: syntax
-
-#### [Properties](#element_syntax-properties-table-collapse)
-
-Name
-
-syntax
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_syntax-doc-panel-collapse)
+#### <a href="#element_syntax-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#element_syntax-instance-table-collapse)
+#### <a href="#element_syntax-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):syntax
- type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntaxType](#type_syntaxType "Jump to "syntaxType" type definition.")" \[0..1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):position> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[positionType](#type_positionType "Jump to "positionType" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):position> \[1..\*\]
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):syntax>
+    <tns:syntax
+     type="tns:syntaxType" [0..1]
+    >
+       <tns:position> tns:positionType </tns:position> [1..*]
+    </tns:syntax>
 
-#### [Schema Component Representation](#element_syntax-schemaComponent-collapse)
+#### <a href="#element_syntax-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<element name="syntax"\>
-   <complexType\>
-      <sequence\>
-         <element name="position" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[positionType](#type_positionType "Jump to "positionType" type definition.")" maxOccurs="unbounded"/>
-      </sequence>
-      <attribute name="type" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntaxType](#type_syntaxType "Jump to "syntaxType" type definition.")"/>
-   </complexType>
-</element>
+    <element name="syntax">
+       <complexType>
+          <sequence>
+             <element name="position" type="tns:positionType" maxOccurs="unbounded"/>
+          </sequence>
+          <attribute name="type" type="tns:syntaxType"/>
+       </complexType>
+    </element>
 
-[](#top "Go to top of page")
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-* * *
+------------------------------------------------------------------------
 
-### Element: transaction
+### Element: <span id="element_transaction" class="name">transaction</span>
 
-#### [Properties](#element_transaction-properties-table-collapse)
+#### <a href="#element_transaction-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Name
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>transaction</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Locally-defined complex type</td>
+</tr>
+<tr class="odd">
+<td><a href="#term_Nillable" title="Look up &#39;Nillable&#39; in glossary">Nillable</a></td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-transaction
-
-Type
-
-Locally-defined complex type
-
-[Nillable](#term_Nillable "Look up 'Nillable' in glossary")
-
-no
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#element_transaction-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#element_transaction-instance-table-collapse)
-
-<[tns](#ns_tns "Find out namespace of 'tns' prefix"):transaction
- title="string" \[0..1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[1..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> \[1\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopStandard](#type_loopStandard "Jump to "loopStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> \[0..1\]
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> \[0..\*\]
-</[tns](#ns_tns "Find out namespace of 'tns' prefix"):transaction>
-
-#### [Schema Component Representation](#element_transaction-schemaComponent-collapse)
-
-<element name="transaction"\>
-   <complexType\>
-      <complexContent\>
-         <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-            <sequence\>
-               <element name="sequence"\>
-                  <complexType\>
-                     <choice maxOccurs="unbounded"\>
-                        <element name="segment" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.")"/>
-                        <element name="loop" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopStandard](#type_loopStandard "Jump to "loopStandard" type definition.")" minOccurs="0"/>
-                     </choice>
-                  </complexType>
-               </element>
-               <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-            </sequence>
-         </extension>
-      </complexContent>
-   </complexType>
-</element>
-
-[](#top "Go to top of page")
-
-* * *
-
-Global Definitions
-------------------
-
-### Attribute Group: implementationAttributeGroup
-
-#### [Properties](#attributeGroup_implementationAttributeGroup-properties-table-collapse)
-
-Name
-
-implementationAttributeGroup
-
-#### [Documentation](#attributeGroup_implementationAttributeGroup-doc-panel-collapse)
+#### <a href="#element_transaction-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#attributeGroup_implementationAttributeGroup-instance-table-collapse)
+#### <a href="#element_transaction-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-minOccurs="nonNegativeInteger" \[0..1\]
+    <tns:transaction
+     title="string" [0..1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [1]   
+          Start Choice [1..*]
+             <tns:segment> tns:segmentStandard </tns:segment> [1]
+             <tns:loop> tns:loopStandard </tns:loop> [0..1]
+          End Choice
+       </tns:sequence>
+       <tns:syntax> ... </tns:syntax> [0..*]
+    </tns:transaction>
 
-×
+#### <a href="#element_transaction-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minOccurs
+    <element name="transaction">
+       <complexType>
+          <complexContent>
+             <extension base="tns:baseType">
+                <sequence>
+                   <element name="sequence">
+                      <complexType>
+                         <choice maxOccurs="unbounded">
+                            <element name="segment" type="tns:segmentStandard"/>
+                            <element name="loop" type="tns:loopStandard" minOccurs="0"/>
+                         </choice>
+                      </complexType>
+                   </element>
+                   <element ref="tns:syntax" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+             </extension>
+          </complexContent>
+       </complexType>
+    </element>
 
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
-maxOccurs="nonNegativeInteger" \[0..1\]
+<span id="SchemaDefinitions">Global Definitions</span>
+------------------------------------------------------
 
-×
+### Attribute Group: <span id="attributeGroup_implementationAttributeGroup" class="name">implementationAttributeGroup</span>
 
-#### Attribute maxOccurs
+#### <a href="#attributeGroup_implementationAttributeGroup-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
+<table class="table tables-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>implementationAttributeGroup</td>
+</tr>
+</tbody>
+</table>
 
-Close
-
- 
-
-#### [Schema Component Representation](#attributeGroup_implementationAttributeGroup-schemaComponent-collapse)
-
-<attributeGroup name="implementationAttributeGroup"\>
-   <attribute name="minOccurs" type="nonNegativeInteger"/>
-   <attribute name="maxOccurs" type="nonNegativeInteger"/>
-</attributeGroup>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Attribute Group: lengthAttributeGroup
-
-#### [Properties](#attributeGroup_lengthAttributeGroup-properties-table-collapse)
-
-Name
-
-lengthAttributeGroup
-
-#### [Documentation](#attributeGroup_lengthAttributeGroup-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#attributeGroup_lengthAttributeGroup-instance-table-collapse)
-
-minLength="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minLength
-
-          The minimum length allowed for an element value to be valid.
-        
-
-Close
-
- 
-maxLength="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxLength
-
-          The maximum length allowed for an element value to be valid.
-        
-
-Close
-
- 
-
-#### [Schema Component Representation](#attributeGroup_lengthAttributeGroup-schemaComponent-collapse)
-
-<attributeGroup name="lengthAttributeGroup"\>
-   <attribute name="minLength" type="nonNegativeInteger" default="1"/>
-   <attribute name="maxLength" type="nonNegativeInteger" default="1"/>
-</attributeGroup>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Attribute Group: occursAttributeGroup
-
-#### [Properties](#attributeGroup_occursAttributeGroup-properties-table-collapse)
-
-Name
-
-occursAttributeGroup
-
-#### [Documentation](#attributeGroup_occursAttributeGroup-doc-panel-collapse)
+#### <a href="#attributeGroup_implementationAttributeGroup-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#attributeGroup_occursAttributeGroup-instance-table-collapse)
+#### <a href="#attributeGroup_implementationAttributeGroup-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-minOccurs="nonNegativeInteger" \[0..1\]
+    minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
 
-×
+#### <a href="#attributeGroup_implementationAttributeGroup-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minOccurs
+    <attributeGroup name="implementationAttributeGroup">
+       <attribute name="minOccurs" type="nonNegativeInteger"/>
+       <attribute name="maxOccurs" type="nonNegativeInteger"/>
+    </attributeGroup>
 
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
-maxOccurs="nonNegativeInteger" \[0..1\]
+### Attribute Group: <span id="attributeGroup_lengthAttributeGroup" class="name">lengthAttributeGroup</span>
 
-×
+#### <a href="#attributeGroup_lengthAttributeGroup-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute maxOccurs
+<table class="table tables-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>lengthAttributeGroup</td>
+</tr>
+</tbody>
+</table>
 
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-
-#### [Schema Component Representation](#attributeGroup_occursAttributeGroup-schemaComponent-collapse)
-
-<attributeGroup name="occursAttributeGroup"\>
-   <attribute name="minOccurs" type="nonNegativeInteger" default="0"/>
-   <attribute name="maxOccurs" type="nonNegativeInteger" default="1"/>
-</attributeGroup>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Attribute Group: referenceAttributeGroup
-
-#### [Properties](#attributeGroup_referenceAttributeGroup-properties-table-collapse)
-
-Name
-
-referenceAttributeGroup
-
-#### [Documentation](#attributeGroup_referenceAttributeGroup-doc-panel-collapse)
+#### <a href="#attributeGroup_lengthAttributeGroup-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#attributeGroup_referenceAttributeGroup-instance-table-collapse)
+#### <a href="#attributeGroup_lengthAttributeGroup-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-type="NCName" \[0..1\]
+    minLength="nonNegativeInteger" [0..1]×Attribute minLength
+              The minimum length allowed for an element value to be valid.
+             Close  
+    maxLength="nonNegativeInteger" [0..1]×Attribute maxLength
+              The maximum length allowed for an element value to be valid.
+             Close  
 
-×
+#### <a href="#attributeGroup_lengthAttributeGroup-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute type
+    <attributeGroup name="lengthAttributeGroup">
+       <attribute name="minLength" type="nonNegativeInteger" default="1"/>
+       <attribute name="maxLength" type="nonNegativeInteger" default="1"/>
+    </attributeGroup>
 
-          The name of the target type being referenced.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
-minOccurs="nonNegativeInteger" \[0..1\]
+### Attribute Group: <span id="attributeGroup_occursAttributeGroup" class="name">occursAttributeGroup</span>
 
-×
+#### <a href="#attributeGroup_occursAttributeGroup-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minOccurs
+<table class="table tables-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>occursAttributeGroup</td>
+</tr>
+</tbody>
+</table>
 
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-
-#### [Schema Component Representation](#attributeGroup_referenceAttributeGroup-schemaComponent-collapse)
-
-<attributeGroup name="referenceAttributeGroup"\>
-   <attribute name="type" type="NCName"/>
-   <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[occursAttributeGroup](#attributeGroup_occursAttributeGroup "Jump to "occursAttributeGroup" attribute group definition.")"/>
-</attributeGroup>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Attribute Group: versionAttributeGroup
-
-#### [Properties](#attributeGroup_versionAttributeGroup-properties-table-collapse)
-
-Name
-
-versionAttributeGroup
-
-#### [Documentation](#attributeGroup_versionAttributeGroup-doc-panel-collapse)
+#### <a href="#attributeGroup_occursAttributeGroup-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#attributeGroup_versionAttributeGroup-instance-table-collapse)
+#### <a href="#attributeGroup_occursAttributeGroup-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-minVersion="token" \[0..1\]
+    minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
 
-×
+#### <a href="#attributeGroup_occursAttributeGroup-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minVersion
+    <attributeGroup name="occursAttributeGroup">
+       <attribute name="minOccurs" type="nonNegativeInteger" default="0"/>
+       <attribute name="maxOccurs" type="nonNegativeInteger" default="1"/>
+    </attributeGroup>
 
-          The minimum transaction version this schema version applies to.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
-maxVersion="token" \[0..1\]
+### Attribute Group: <span id="attributeGroup_referenceAttributeGroup" class="name">referenceAttributeGroup</span>
 
-×
+#### <a href="#attributeGroup_referenceAttributeGroup-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute maxVersion
+<table class="table tables-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>referenceAttributeGroup</td>
+</tr>
+</tbody>
+</table>
 
-          The maximum transaction version this schema version applies to.
-        
-
-Close
-
- 
-
-#### [Schema Component Representation](#attributeGroup_versionAttributeGroup-schemaComponent-collapse)
-
-<attributeGroup name="versionAttributeGroup"\>
-   <attribute name="minVersion" type="token"/>
-   <attribute name="maxVersion" type="token"/>
-</attributeGroup>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: anyElementType
-
-#### [Type hierarchy](#type_anyElementType-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **anyElementType** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_anyElementType-properties-table-collapse)
-
-Name
-
-anyElementType
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_anyElementType-doc-panel-collapse)
+#### <a href="#attributeGroup_referenceAttributeGroup-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_anyElementType-instance-table-collapse)
+#### <a href="#attributeGroup_referenceAttributeGroup-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- minOccurs="nonNegativeInteger" \[0..1\]
+    type="NCName" [0..1]×Attribute type
+              The name of the target type being referenced.
+             Close  
+    minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
 
-×
+#### <a href="#attributeGroup_referenceAttributeGroup-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minOccurs
+    <attributeGroup name="referenceAttributeGroup">
+       <attribute name="type" type="NCName"/>
+       <attributeGroup ref="tns:occursAttributeGroup"/>
+    </attributeGroup>
 
-The minimum number of times an undefined element may occur at the declared location in the EDI structure.
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
+### Attribute Group: <span id="attributeGroup_versionAttributeGroup" class="name">versionAttributeGroup</span>
 
-×
+#### <a href="#attributeGroup_versionAttributeGroup-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute maxOccurs
+<table class="table tables-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>versionAttributeGroup</td>
+</tr>
+</tbody>
+</table>
 
-The maximum number of times an undefined element may occur at the declared location in the EDI structure.
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-</...>
-
-#### [Schema Component Representation](#type_anyElementType-schemaComponent-collapse)
-
-<complexType name="anyElementType"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <attribute name="minOccurs" type="nonNegativeInteger" default="0"/>
-         <attribute name="maxOccurs" type="nonNegativeInteger" default="1"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: baseType
-
-#### [Type hierarchy](#type_baseType-type-hierarchy-collapse)
-
-Super-types:
-
-None
-
-Sub-types:
-
-*   [anyElementType](#type_anyElementType "Jump to "anyElementType" type definition.") (by extension)
-*   [controlType](#type_controlType "Jump to "controlType" type definition.") (by extension)
-    *   [transactionControlType](#type_transactionControlType "Jump to "transactionControlType" type definition.") (by extension)
-    *   [groupControlType](#type_groupControlType "Jump to "groupControlType" type definition.") (by extension)
-*   [elementStandard](#type_elementStandard "Jump to "elementStandard" type definition.") (by extension)
-*   [elementImpl](#type_elementImpl "Jump to "elementImpl" type definition.") (by extension)
-*   [compositeStandard](#type_compositeStandard "Jump to "compositeStandard" type definition.") (by extension)
-*   [compositeImpl](#type_compositeImpl "Jump to "compositeImpl" type definition.") (by extension)
-*   [segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.") (by extension)
-*   [segmentImpl](#type_segmentImpl "Jump to "segmentImpl" type definition.") (by extension)
-*   [loopBase](#type_loopBase "Jump to "loopBase" type definition.") (by extension)
-    *   [loopStandard](#type_loopStandard "Jump to "loopStandard" type definition.") (by extension)
-    *   [loopImpl](#type_loopImpl "Jump to "loopImpl" type definition.") (by extension)
-
-#### [Properties](#type_baseType-properties-table-collapse)
-
-Name
-
-baseType
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-yes
-
-#### [Documentation](#type_baseType-doc-panel-collapse)
+#### <a href="#attributeGroup_versionAttributeGroup-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_baseType-instance-table-collapse)
+#### <a href="#attributeGroup_versionAttributeGroup-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-</...>
+    minVersion="token" [0..1]×Attribute minVersion
+              The minimum transaction version this schema version applies to.
+             Close  
+    maxVersion="token" [0..1]×Attribute maxVersion
+              The maximum transaction version this schema version applies to.
+             Close  
 
-#### [Schema Component Representation](#type_baseType-schemaComponent-collapse)
+#### <a href="#attributeGroup_versionAttributeGroup-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<complexType name="baseType" abstract="true"\>
-   <sequence\>
-      <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")" minOccurs="0" maxOccurs="1"/>
-   </sequence>
-   <attribute name="title" type="string" use="optional"/>
-</complexType>
+    <attributeGroup name="versionAttributeGroup">
+       <attribute name="minVersion" type="token"/>
+       <attribute name="maxVersion" type="token"/>
+    </attributeGroup>
 
-[](#top "Go to top of page")
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-* * *
+------------------------------------------------------------------------
 
-### Complex Type: compositeImpl
+### Complex Type: <span id="type_anyElementType" class="name">anyElementType</span>
 
-#### [Type hierarchy](#type_compositeImpl-type-hierarchy-collapse)
+#### <a href="#type_anyElementType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-Super-types:
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>anyElementType</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **compositeImpl** (by extension)
+#### <a href="#type_anyElementType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Sub-types:
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>anyElementType</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-None
-
-#### [Properties](#type_compositeImpl-properties-table-collapse)
-
-Name
-
-compositeImpl
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_compositeImpl-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#type_compositeImpl-instance-table-collapse)
-
-<...
- title="string" \[0..1\]
- position="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[positionType](#type_positionType "Jump to "positionType" type definition.")" \[1\]
- minOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minOccurs
-
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[0..1\]  
-      <[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementImpl](#type_elementImpl "Jump to "elementImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> \[1..\*\]
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-</...>
-
-#### [Schema Component Representation](#type_compositeImpl-schemaComponent-collapse)
-
-<complexType name="compositeImpl"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <sequence\>
-            <element name="sequence" minOccurs="0"\>
-               <complexType\>
-                  <sequence\>
-                     <element name="element" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementImpl](#type_elementImpl "Jump to "elementImpl" type definition.")" minOccurs="1" maxOccurs="unbounded"/>
-                  </sequence>
-               </complexType>
-            </element>
-         </sequence>
-         <attribute name="position" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[positionType](#type_positionType "Jump to "positionType" type definition.")" use="required"/>
-         <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementationAttributeGroup](#attributeGroup_implementationAttributeGroup "Jump to "implementationAttributeGroup" attribute group definition.")"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: compositeStandard
-
-#### [Type hierarchy](#type_compositeStandard-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **compositeStandard** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_compositeStandard-properties-table-collapse)
-
-Name
-
-compositeStandard
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_compositeStandard-doc-panel-collapse)
+#### <a href="#type_anyElementType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_compositeStandard-instance-table-collapse)
+#### <a href="#type_anyElementType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- type="NCName" \[0..1\]
+    <...
+     title="string" [0..1]
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccursThe minimum number of times an undefined element may occur at the declared location in the EDI structure. Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccursThe maximum number of times an undefined element may occur at the declared location in the EDI structure. Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+    </...>
 
-×
+#### <a href="#type_anyElementType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute type
+    <complexType name="anyElementType">
+       <complexContent>
+          <extension base="tns:baseType">
+             <attribute name="minOccurs" type="nonNegativeInteger" default="0"/>
+             <attribute name="maxOccurs" type="nonNegativeInteger" default="1"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-          The name of the target type being referenced.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
- minOccurs="nonNegativeInteger" \[0..1\]
+### Complex Type: <span id="type_baseType" class="name">baseType</span>
 
-×
+#### <a href="#type_baseType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-#### Attribute minOccurs
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td><ul class="incremental">
+<li><span class="type"><a href="#type_anyElementType" title="Jump to &quot;anyElementType&quot; type definition.">anyElementType</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_controlType" title="Jump to &quot;controlType&quot; type definition.">controlType</a></span> (by extension)
+<ul class="incremental">
+<li><span class="type"><a href="#type_transactionControlType" title="Jump to &quot;transactionControlType&quot; type definition.">transactionControlType</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_groupControlType" title="Jump to &quot;groupControlType&quot; type definition.">groupControlType</a></span> (by extension)</li>
+</ul></li>
+<li><span class="type"><a href="#type_elementStandard" title="Jump to &quot;elementStandard&quot; type definition.">elementStandard</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_elementImpl" title="Jump to &quot;elementImpl&quot; type definition.">elementImpl</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_compositeStandard" title="Jump to &quot;compositeStandard&quot; type definition.">compositeStandard</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_compositeImpl" title="Jump to &quot;compositeImpl&quot; type definition.">compositeImpl</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_segmentStandard" title="Jump to &quot;segmentStandard&quot; type definition.">segmentStandard</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_segmentImpl" title="Jump to &quot;segmentImpl&quot; type definition.">segmentImpl</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_loopBase" title="Jump to &quot;loopBase&quot; type definition.">loopBase</a></span> (by extension)
+<ul class="incremental">
+<li><span class="type"><a href="#type_loopStandard" title="Jump to &quot;loopStandard&quot; type definition.">loopStandard</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_loopImpl" title="Jump to &quot;loopImpl&quot; type definition.">loopImpl</a></span> (by extension)</li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
+#### <a href="#type_baseType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Close
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>baseType</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
 
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):version
-    minVersion="token" \[0..1\]
-
-×
-
-#### Attribute minVersion
-
-          The minimum transaction version this schema version applies to.
-        
-
-Close
-
- 
-    maxVersion="token" \[0..1\]
-
-×
-
-#### Attribute maxVersion
-
-          The maximum transaction version this schema version applies to.
-        
-
-Close
-
- 
-    minOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minOccurs
-
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-    maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-/>  \[0..\*\]
-
-</...>
-
-#### [Schema Component Representation](#type_compositeStandard-schemaComponent-collapse)
-
-<complexType name="compositeStandard"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <sequence\>
-            <element name="version" minOccurs="0" maxOccurs="unbounded"\>
-               <complexType\>
-                  <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[versionAttributeGroup](#attributeGroup_versionAttributeGroup "Jump to "versionAttributeGroup" attribute group definition.")"/>
-                  <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[occursAttributeGroup](#attributeGroup_occursAttributeGroup "Jump to "occursAttributeGroup" attribute group definition.")"/>
-               </complexType>
-            </element>
-         </sequence>
-         <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[referenceAttributeGroup](#attributeGroup_referenceAttributeGroup "Jump to "referenceAttributeGroup" attribute group definition.")"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: controlType
-
-#### [Type hierarchy](#type_controlType-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **controlType** (by extension)
-
-Sub-types:
-
-*   [transactionControlType](#type_transactionControlType "Jump to "transactionControlType" type definition.") (by extension)
-*   [groupControlType](#type_groupControlType "Jump to "groupControlType" type definition.") (by extension)
-
-#### [Properties](#type_controlType-properties-table-collapse)
-
-Name
-
-controlType
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-yes
-
-#### [Documentation](#type_controlType-doc-panel-collapse)
+#### <a href="#type_baseType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_controlType-instance-table-collapse)
+#### <a href="#type_baseType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- header="NCName" \[1\]
- trailer="NCName" \[1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-</...>
+    <...
+     title="string" [0..1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+    </...>
 
-#### [Schema Component Representation](#type_controlType-schemaComponent-collapse)
+#### <a href="#type_baseType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<complexType name="controlType" abstract="true"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <attribute name="header" type="NCName" use="required"/>
-         <attribute name="trailer" type="NCName" use="required"/>
-      </extension>
-   </complexContent>
-</complexType>
+    <complexType name="baseType" abstract="true">
+       <sequence>
+          <element ref="tns:description" minOccurs="0" maxOccurs="1"/>
+       </sequence>
+       <attribute name="title" type="string" use="optional"/>
+    </complexType>
 
-[](#top "Go to top of page")
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-* * *
+------------------------------------------------------------------------
 
-### Complex Type: elementImpl
+### Complex Type: <span id="type_compositeImpl" class="name">compositeImpl</span>
 
-#### [Type hierarchy](#type_elementImpl-type-hierarchy-collapse)
+#### <a href="#type_compositeImpl-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-Super-types:
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>compositeImpl</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **elementImpl** (by extension)
+#### <a href="#type_compositeImpl-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Sub-types:
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>compositeImpl</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-None
-
-#### [Properties](#type_elementImpl-properties-table-collapse)
-
-Name
-
-elementImpl
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_elementImpl-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#type_elementImpl-instance-table-collapse)
-
-<...
- title="string" \[0..1\]
- position="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[positionType](#type_positionType "Jump to "positionType" type definition.")" \[1\]
- minOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minOccurs
-
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")\> \[0..1\]
-</...>
-
-#### [Schema Component Representation](#type_elementImpl-schemaComponent-collapse)
-
-<complexType name="elementImpl"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <sequence\>
-            <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[enumeration](#element_enumeration "Jump to "enumeration" element declaration.")" minOccurs="0"/>
-         </sequence>
-         <attribute name="position" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[positionType](#type_positionType "Jump to "positionType" type definition.")" use="required"/>
-         <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementationAttributeGroup](#attributeGroup_implementationAttributeGroup "Jump to "implementationAttributeGroup" attribute group definition.")"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: elementStandard
-
-#### [Type hierarchy](#type_elementStandard-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **elementStandard** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_elementStandard-properties-table-collapse)
-
-Name
-
-elementStandard
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_elementStandard-doc-panel-collapse)
+#### <a href="#type_compositeImpl-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_elementStandard-instance-table-collapse)
+#### <a href="#type_compositeImpl-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- type="NCName" \[0..1\]
+    <...
+     title="string" [0..1]
+     position="tns:positionType" [1]
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [0..1]   
+          <tns:element> tns:elementImpl </tns:element> [1..*]
+       </tns:sequence>
+    </...>
 
-×
+#### <a href="#type_compositeImpl-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute type
+    <complexType name="compositeImpl">
+       <complexContent>
+          <extension base="tns:baseType">
+             <sequence>
+                <element name="sequence" minOccurs="0">
+                   <complexType>
+                      <sequence>
+                         <element name="element" type="tns:elementImpl" minOccurs="1" maxOccurs="unbounded"/>
+                      </sequence>
+                   </complexType>
+                </element>
+             </sequence>
+             <attribute name="position" type="tns:positionType" use="required"/>
+             <attributeGroup ref="tns:implementationAttributeGroup"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-          The name of the target type being referenced.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
- minOccurs="nonNegativeInteger" \[0..1\]
+### Complex Type: <span id="type_compositeStandard" class="name">compositeStandard</span>
 
-×
+#### <a href="#type_compositeStandard-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-#### Attribute minOccurs
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>compositeStandard</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
+#### <a href="#type_compositeStandard-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Close
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>compositeStandard</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):version
-    minVersion="token" \[0..1\]
-
-×
-
-#### Attribute minVersion
-
-          The minimum transaction version this schema version applies to.
-        
-
-Close
-
- 
-    maxVersion="token" \[0..1\]
-
-×
-
-#### Attribute maxVersion
-
-          The maximum transaction version this schema version applies to.
-        
-
-Close
-
- 
-    minOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minOccurs
-
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-    maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-/>  \[0..\*\]
-
-</...>
-
-#### [Schema Component Representation](#type_elementStandard-schemaComponent-collapse)
-
-<complexType name="elementStandard"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <sequence\>
-            <element name="version" minOccurs="0" maxOccurs="unbounded"\>
-               <complexType\>
-                  <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[versionAttributeGroup](#attributeGroup_versionAttributeGroup "Jump to "versionAttributeGroup" attribute group definition.")"/>
-                  <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[occursAttributeGroup](#attributeGroup_occursAttributeGroup "Jump to "occursAttributeGroup" attribute group definition.")"/>
-               </complexType>
-            </element>
-         </sequence>
-         <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[referenceAttributeGroup](#attributeGroup_referenceAttributeGroup "Jump to "referenceAttributeGroup" attribute group definition.")"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: groupControlType
-
-#### [Type hierarchy](#type_groupControlType-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < [controlType](#type_controlType "Jump to "controlType" type definition.") (by extension) < **groupControlType** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_groupControlType-properties-table-collapse)
-
-Name
-
-groupControlType
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_groupControlType-doc-panel-collapse)
+#### <a href="#type_compositeStandard-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_groupControlType-instance-table-collapse)
+#### <a href="#type_compositeStandard-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- header="NCName" \[1\]
- trailer="NCName" \[1\]
- use="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[useType](#type_useType "Jump to "useType" type definition.")" \[0..1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):transaction> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[transactionControlType](#type_transactionControlType "Jump to "transactionControlType" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):transaction> \[0..1\]
-</...>
+    <...
+     title="string" [0..1]
+     type="NCName" [0..1]×Attribute type
+              The name of the target type being referenced.
+             Close  
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:version
+        minVersion="token" [0..1]×Attribute minVersion
+              The minimum transaction version this schema version applies to.
+             Close  
+        maxVersion="token" [0..1]×Attribute maxVersion
+              The maximum transaction version this schema version applies to.
+             Close  
+        minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+        maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    />  [0..*]
 
-#### [Schema Component Representation](#type_groupControlType-schemaComponent-collapse)
+    </...>
 
-<complexType name="groupControlType"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[controlType](#type_controlType "Jump to "controlType" type definition.")"\>
-         <sequence\>
-            <element name="transaction" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[transactionControlType](#type_transactionControlType "Jump to "transactionControlType" type definition.")" minOccurs="0"/>
-         </sequence>
-         <attribute name="use" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[useType](#type_useType "Jump to "useType" type definition.")" default="optional"/>
-      </extension>
-   </complexContent>
-</complexType>
+#### <a href="#type_compositeStandard-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-[](#top "Go to top of page")
+    <complexType name="compositeStandard">
+       <complexContent>
+          <extension base="tns:baseType">
+             <sequence>
+                <element name="version" minOccurs="0" maxOccurs="unbounded">
+                   <complexType>
+                      <attributeGroup ref="tns:versionAttributeGroup"/>
+                      <attributeGroup ref="tns:occursAttributeGroup"/>
+                   </complexType>
+                </element>
+             </sequence>
+             <attributeGroup ref="tns:referenceAttributeGroup"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-* * *
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-### Complex Type: loopBase
+------------------------------------------------------------------------
 
-#### [Type hierarchy](#type_loopBase-type-hierarchy-collapse)
+### Complex Type: <span id="type_controlType" class="name">controlType</span>
 
-Super-types:
+#### <a href="#type_controlType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **loopBase** (by extension)
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>controlType</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td><ul class="incremental">
+<li><span class="type"><a href="#type_transactionControlType" title="Jump to &quot;transactionControlType&quot; type definition.">transactionControlType</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_groupControlType" title="Jump to &quot;groupControlType&quot; type definition.">groupControlType</a></span> (by extension)</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-Sub-types:
+#### <a href="#type_controlType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-*   [loopStandard](#type_loopStandard "Jump to "loopStandard" type definition.") (by extension)
-*   [loopImpl](#type_loopImpl "Jump to "loopImpl" type definition.") (by extension)
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>controlType</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
 
-#### [Properties](#type_loopBase-properties-table-collapse)
-
-Name
-
-loopBase
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-yes
-
-#### [Documentation](#type_loopBase-doc-panel-collapse)
-
-No documentation provided.
-
-#### [XML Instance Representation](#type_loopBase-instance-table-collapse)
-
-<...
- title="string" \[0..1\]
- minOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute minOccurs
-
-              The minimum number of times a loop may repeat. A value of 0 (zero)
-              indicates that the loop is optional.
-
-              When used in a loop defined
-              within an implementation,
-              the value may not be less than the value set on the standard loop referenced
-              by the implementation loop's 'type'
-              attribute.
-            
-
-Close
-
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-              The maximum number of times a loop may repeat.
-              When used in a loop defined within an implementation, the value
-              may not be greater than
-              the value set on the standard loop referenced
-              by the implementation loop's 'type' attribute.
-            
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-</...>
-
-#### [Schema Component Representation](#type_loopBase-schemaComponent-collapse)
-
-<complexType name="loopBase" abstract="true"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <attribute name="minOccurs" type="nonNegativeInteger" default="0"/>
-         <attribute name="maxOccurs" type="nonNegativeInteger" default="1"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: loopImpl
-
-#### [Type hierarchy](#type_loopImpl-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < [loopBase](#type_loopBase "Jump to "loopBase" type definition.") (by extension) < **loopImpl** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_loopImpl-properties-table-collapse)
-
-Name
-
-loopImpl
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_loopImpl-doc-panel-collapse)
+#### <a href="#type_controlType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_loopImpl-instance-table-collapse)
+#### <a href="#type_controlType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- minOccurs="nonNegativeInteger" \[0..1\]
+    <...
+     title="string" [0..1]
+     header="NCName" [1]
+     trailer="NCName" [1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+    </...>
 
-×
+#### <a href="#type_controlType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minOccurs
+    <complexType name="controlType" abstract="true">
+       <complexContent>
+          <extension base="tns:baseType">
+             <attribute name="header" type="NCName" use="required"/>
+             <attribute name="trailer" type="NCName" use="required"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-              The minimum number of times a loop may repeat. A value of 0 (zero)
-              indicates that the loop is optional.
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-              When used in a loop defined
-              within an implementation,
-              the value may not be less than the value set on the standard loop referenced
-              by the implementation loop's 'type'
-              attribute.
-            
+------------------------------------------------------------------------
 
-Close
+### Complex Type: <span id="type_elementImpl" class="name">elementImpl</span>
 
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
+#### <a href="#type_elementImpl-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-×
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>elementImpl</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-#### Attribute maxOccurs
+#### <a href="#type_elementImpl-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-              The maximum number of times a loop may repeat.
-              When used in a loop defined within an implementation, the value
-              may not be greater than
-              the value set on the standard loop referenced
-              by the implementation loop's 'type' attribute.
-            
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>elementImpl</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-Close
-
- 
- type="NMTOKEN" \[1\]
-
-×
-
-#### Attribute type
-
-              The identifier (code attribute) of the standard loop this loop
-              implements.
-            
-
-Close
-
- 
- code="NMTOKEN" \[1\]
-
-×
-
-#### Attribute code
-
-              Code used to uniquely identify a loop implementation within the
-              transaction/message implementation.
-            
-
-Close
-
- 
- discriminator="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[discriminatorType](#type_discriminatorType "Jump to "discriminatorType" type definition.")" \[0..1\]
-
-×
-
-#### Attribute discriminator
-
-              The element position in the loop's first segment used to identify an
-              implementation of a standard loop from other implementations. The
-              element identified by the position given in this attribute must also specify an
-              enumeration of values used only by this implementation and not used
-              by any other implementations of the standard loop at the same level of the
-              transaction.
-            
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[1..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentImpl](#type_segmentImpl "Jump to "segmentImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> \[1\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopImpl](#type_loopImpl "Jump to "loopImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> \[0..1\]
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-</...>
-
-#### [Schema Component Representation](#type_loopImpl-schemaComponent-collapse)
-
-<complexType name="loopImpl"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopBase](#type_loopBase "Jump to "loopBase" type definition.")"\>
-         <sequence\>
-            <element name="sequence"\>
-               <complexType\>
-                  <choice maxOccurs="unbounded"\>
-                     <element name="segment" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentImpl](#type_segmentImpl "Jump to "segmentImpl" type definition.")"/>
-                     <element name="loop" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopImpl](#type_loopImpl "Jump to "loopImpl" type definition.")" minOccurs="0"/>
-                  </choice>
-               </complexType>
-            </element>
-         </sequence>
-         <attribute name="type" type="NMTOKEN" use="required"/>
-         <attribute name="code" type="NMTOKEN" use="required"/>
-         <attribute name="discriminator" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[discriminatorType](#type_discriminatorType "Jump to "discriminatorType" type definition.")"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: loopStandard
-
-#### [Type hierarchy](#type_loopStandard-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < [loopBase](#type_loopBase "Jump to "loopBase" type definition.") (by extension) < **loopStandard** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_loopStandard-properties-table-collapse)
-
-Name
-
-loopStandard
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_loopStandard-doc-panel-collapse)
+#### <a href="#type_elementImpl-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_loopStandard-instance-table-collapse)
+#### <a href="#type_elementImpl-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- minOccurs="nonNegativeInteger" \[0..1\]
+    <...
+     title="string" [0..1]
+     position="tns:positionType" [1]
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:enumeration> ... </tns:enumeration> [0..1]
+    </...>
 
-×
+#### <a href="#type_elementImpl-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute minOccurs
+    <complexType name="elementImpl">
+       <complexContent>
+          <extension base="tns:baseType">
+             <sequence>
+                <element ref="tns:enumeration" minOccurs="0"/>
+             </sequence>
+             <attribute name="position" type="tns:positionType" use="required"/>
+             <attributeGroup ref="tns:implementationAttributeGroup"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-              The minimum number of times a loop may repeat. A value of 0 (zero)
-              indicates that the loop is optional.
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-              When used in a loop defined
-              within an implementation,
-              the value may not be less than the value set on the standard loop referenced
-              by the implementation loop's 'type'
-              attribute.
-            
+------------------------------------------------------------------------
 
-Close
+### Complex Type: <span id="type_elementStandard" class="name">elementStandard</span>
 
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
+#### <a href="#type_elementStandard-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-×
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>elementStandard</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-#### Attribute maxOccurs
+#### <a href="#type_elementStandard-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-              The maximum number of times a loop may repeat.
-              When used in a loop defined within an implementation, the value
-              may not be greater than
-              the value set on the standard loop referenced
-              by the implementation loop's 'type' attribute.
-            
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>elementStandard</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-Close
-
- 
- code="NMTOKEN" \[1\]
-
-×
-
-#### Attribute code
-
-              Code used to uniquely identify a loop within the transaction/message.
-            
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[1..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):segment> \[1\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopStandard](#type_loopStandard "Jump to "loopStandard" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):loop> \[0..1\]
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")\> \[0..\*\]
-</...>
-
-#### [Schema Component Representation](#type_loopStandard-schemaComponent-collapse)
-
-<complexType name="loopStandard"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopBase](#type_loopBase "Jump to "loopBase" type definition.")"\>
-         <sequence\>
-            <element name="sequence"\>
-               <complexType\>
-                  <choice maxOccurs="unbounded"\>
-                     <element name="segment" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[segmentStandard](#type_segmentStandard "Jump to "segmentStandard" type definition.")"/>
-                     <element name="loop" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[loopStandard](#type_loopStandard "Jump to "loopStandard" type definition.")" minOccurs="0"/>
-                  </choice>
-               </complexType>
-            </element>
-            <element ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[syntax](#element_syntax "Jump to "syntax" element declaration.")" minOccurs="0" maxOccurs="unbounded"/>
-         </sequence>
-         <attribute name="code" type="NMTOKEN" use="required"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: segmentImpl
-
-#### [Type hierarchy](#type_segmentImpl-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **segmentImpl** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_segmentImpl-properties-table-collapse)
-
-Name
-
-segmentImpl
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_segmentImpl-doc-panel-collapse)
+#### <a href="#type_elementStandard-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_segmentImpl-instance-table-collapse)
+#### <a href="#type_elementStandard-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- type="NCName" \[1\]
+    <...
+     title="string" [0..1]
+     type="NCName" [0..1]×Attribute type
+              The name of the target type being referenced.
+             Close  
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:version
+        minVersion="token" [0..1]×Attribute minVersion
+              The minimum transaction version this schema version applies to.
+             Close  
+        maxVersion="token" [0..1]×Attribute maxVersion
+              The maximum transaction version this schema version applies to.
+             Close  
+        minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+        maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    />  [0..*]
 
-×
+    </...>
 
-#### Attribute type
+#### <a href="#type_elementStandard-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-              The name of the standard segment used at this position in the implementation.
-              Must be a valid segment name that occurs in the same
-              standard loop.
-            
+    <complexType name="elementStandard">
+       <complexContent>
+          <extension base="tns:baseType">
+             <sequence>
+                <element name="version" minOccurs="0" maxOccurs="unbounded">
+                   <complexType>
+                      <attributeGroup ref="tns:versionAttributeGroup"/>
+                      <attributeGroup ref="tns:occursAttributeGroup"/>
+                   </complexType>
+                </element>
+             </sequence>
+             <attributeGroup ref="tns:referenceAttributeGroup"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-Close
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
- 
- code="NMTOKEN" \[0..1\]
+------------------------------------------------------------------------
 
-×
+### Complex Type: <span id="type_groupControlType" class="name">groupControlType</span>
 
-#### Attribute code
+#### <a href="#type_groupControlType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-              Code used to identify a segment within a loop. May be useful when occurrences of a
-              standard segment contain distinct information.
-            
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <span class="type"><a href="#type_controlType" title="Jump to &quot;controlType&quot; type definition.">controlType</a></span> (by extension) &lt; <strong>groupControlType</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-Close
+#### <a href="#type_groupControlType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
- 
- minOccurs="nonNegativeInteger" \[0..1\]
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>groupControlType</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-×
-
-#### Attribute minOccurs
-
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
- discriminator="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[discriminatorType](#type_discriminatorType "Jump to "discriminatorType" type definition.")" \[0..1\]
-
-×
-
-#### Attribute discriminator
-
-              The element position in the segment used to identify an occurrence
-              of a standard segment from other implementation occurrences. The
-              element identified by the position given in this attribute must also specify an
-              enumeration of values used only by this implementation and not used
-              by any other implementations of the standard segment in the same implementation loop.
-            
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence   \> \[0..1\]  
-      Start [Choice](#term_Choice "Look up 'Choice' in glossary") \[0..\*\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementImpl](#type_elementImpl "Jump to "elementImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):element> \[1\]
-         <[tns](#ns_tns "Find out namespace of 'tns' prefix"):composite> [tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeImpl](#type_compositeImpl "Jump to "compositeImpl" type definition.") </[tns](#ns_tns "Find out namespace of 'tns' prefix"):composite> \[1\]
-      End Choice
-   </[tns](#ns_tns "Find out namespace of 'tns' prefix"):sequence>
-</...>
-
-#### [Schema Component Representation](#type_segmentImpl-schemaComponent-collapse)
-
-<complexType name="segmentImpl"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <sequence\>
-            <element name="sequence" minOccurs="0"\>
-               <complexType\>
-                  <sequence\>
-                     <choice minOccurs="0" maxOccurs="unbounded"\>
-                        <element name="element" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[elementImpl](#type_elementImpl "Jump to "elementImpl" type definition.")"/>
-                        <element name="composite" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[compositeImpl](#type_compositeImpl "Jump to "compositeImpl" type definition.")"/>
-                     </choice>
-                  </sequence>
-               </complexType>
-            </element>
-         </sequence>
-         <attribute name="type" type="NCName" use="required"/>
-         <attribute name="code" type="NMTOKEN" use="optional"/>
-         <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[implementationAttributeGroup](#attributeGroup_implementationAttributeGroup "Jump to "implementationAttributeGroup" attribute group definition.")"/>
-         <attribute name="discriminator" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[discriminatorType](#type_discriminatorType "Jump to "discriminatorType" type definition.")" use="optional"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: segmentStandard
-
-#### [Type hierarchy](#type_segmentStandard-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < **segmentStandard** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_segmentStandard-properties-table-collapse)
-
-Name
-
-segmentStandard
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_segmentStandard-doc-panel-collapse)
+#### <a href="#type_groupControlType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_segmentStandard-instance-table-collapse)
+#### <a href="#type_groupControlType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- type="NCName" \[0..1\]
+    <...
+     title="string" [0..1]
+     header="NCName" [1]
+     trailer="NCName" [1]
+     use="tns:useType" [0..1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:transaction> tns:transactionControlType </tns:transaction> [0..1]
+    </...>
 
-×
+#### <a href="#type_groupControlType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-#### Attribute type
+    <complexType name="groupControlType">
+       <complexContent>
+          <extension base="tns:controlType">
+             <sequence>
+                <element name="transaction" type="tns:transactionControlType" minOccurs="0"/>
+             </sequence>
+             <attribute name="use" type="tns:useType" default="optional"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-          The name of the target type being referenced.
-        
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Close
+------------------------------------------------------------------------
 
- 
- minOccurs="nonNegativeInteger" \[0..1\]
+### Complex Type: <span id="type_loopBase" class="name">loopBase</span>
 
-×
+#### <a href="#type_loopBase-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-#### Attribute minOccurs
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>loopBase</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td><ul class="incremental">
+<li><span class="type"><a href="#type_loopStandard" title="Jump to &quot;loopStandard&quot; type definition.">loopStandard</a></span> (by extension)</li>
+<li><span class="type"><a href="#type_loopImpl" title="Jump to &quot;loopImpl&quot; type definition.">loopImpl</a></span> (by extension)</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-          The minimum number of times a type may occur at the declared location
-          in the EDI structure.
-        
+#### <a href="#type_loopBase-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Close
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>loopBase</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
 
- 
- maxOccurs="nonNegativeInteger" \[0..1\]
-
-×
-
-#### Attribute maxOccurs
-
-          The maximum number of times a type may occur at the declared location
-          in the EDI structure.
-        
-
-Close
-
- 
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-</...>
-
-#### [Schema Component Representation](#type_segmentStandard-schemaComponent-collapse)
-
-<complexType name="segmentStandard"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[baseType](#type_baseType "Jump to "baseType" type definition.")"\>
-         <attributeGroup ref="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[referenceAttributeGroup](#attributeGroup_referenceAttributeGroup "Jump to "referenceAttributeGroup" attribute group definition.")"/>
-      </extension>
-   </complexContent>
-</complexType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Complex Type: transactionControlType
-
-#### [Type hierarchy](#type_transactionControlType-type-hierarchy-collapse)
-
-Super-types:
-
-[baseType](#type_baseType "Jump to "baseType" type definition.") < [controlType](#type_controlType "Jump to "controlType" type definition.") (by extension) < **transactionControlType** (by extension)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_transactionControlType-properties-table-collapse)
-
-Name
-
-transactionControlType
-
-[Abstract](#term_Abstract "Look up 'Abstract' in glossary")
-
-no
-
-#### [Documentation](#type_transactionControlType-doc-panel-collapse)
+#### <a href="#type_loopBase-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [XML Instance Representation](#type_transactionControlType-instance-table-collapse)
+#### <a href="#type_loopBase-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<...
- title="string" \[0..1\]
- header="NCName" \[1\]
- trailer="NCName" \[1\]
- use="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[useType](#type_useType "Jump to "useType" type definition.")" \[0..1\]
-\>
-   <[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> ... </[tns](#ns_tns "Find out namespace of 'tns' prefix"):[description](#element_description "Jump to "description" element declaration.")\> \[0..1\]
-</...>
+    <...
+     title="string" [0..1]
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+                  The minimum number of times a loop may repeat. A value of 0 (zero)
+                  indicates that the loop is optional.
 
-#### [Schema Component Representation](#type_transactionControlType-schemaComponent-collapse)
+                  When used in a loop defined
+                  within an implementation,
+                  the value may not be less than the value set on the standard loop referenced
+                  by the implementation loop's 'type'
+                  attribute.
+                 Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+                  The maximum number of times a loop may repeat.
+                  When used in a loop defined within an implementation, the value
+                  may not be greater than
+                  the value set on the standard loop referenced
+                  by the implementation loop's 'type' attribute.
+                 Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+    </...>
 
-<complexType name="transactionControlType"\>
-   <complexContent\>
-      <extension base="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[controlType](#type_controlType "Jump to "controlType" type definition.")"\>
-         <attribute name="use" type="[tns](#ns_tns "Find out namespace of 'tns' prefix"):[useType](#type_useType "Jump to "useType" type definition.")" default="optional"/>
-      </extension>
-   </complexContent>
-</complexType>
+#### <a href="#type_loopBase-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-[](#top "Go to top of page")
+    <complexType name="loopBase" abstract="true">
+       <complexContent>
+          <extension base="tns:baseType">
+             <attribute name="minOccurs" type="nonNegativeInteger" default="0"/>
+             <attribute name="maxOccurs" type="nonNegativeInteger" default="1"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-* * *
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-### Simple Type: discriminatorType
+------------------------------------------------------------------------
 
-#### [Type hierarchy](#type_discriminatorType-type-hierarchy-collapse)
+### Complex Type: <span id="type_loopImpl" class="name">loopImpl</span>
 
-Super-types:
+#### <a href="#type_loopImpl-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-decimal < **discriminatorType** (by restriction)
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <span class="type"><a href="#type_loopBase" title="Jump to &quot;loopBase&quot; type definition.">loopBase</a></span> (by extension) &lt; <strong>loopImpl</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-Sub-types:
+#### <a href="#type_loopImpl-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-None
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>loopImpl</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-#### [Properties](#type_discriminatorType-properties-table-collapse)
-
-Name
-
-discriminatorType
-
-Content
-
-*   Base XSD Type: decimal
-
-*   _pattern_ = \[0-9\]+(\\.\[0-9\]{1,2}){0,1}
-*   1 <= _value_ <= 99.99
-
-#### [Documentation](#type_discriminatorType-doc-panel-collapse)
-
-No documentation provided.
-
-#### [Schema Component Representation](#type_discriminatorType-schemaComponent-collapse)
-
-<simpleType name="discriminatorType"\>
-   <restriction base="decimal"\>
-      <minInclusive value="1"/>
-      <maxInclusive value="99.99"/>
-      <pattern value="\[0-9\]+(\\.\[0-9\]{1,2}){0,1}"/>
-   </restriction>
-</simpleType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Simple Type: elementBaseType
-
-#### [Type hierarchy](#type_elementBaseType-type-hierarchy-collapse)
-
-Super-types:
-
-string < **elementBaseType** (by restriction)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_elementBaseType-properties-table-collapse)
-
-Name
-
-elementBaseType
-
-Content
-
-*   Base XSD Type: string
-
-*   _value_ comes from list: { 'binary'| 'date'| 'decimal'| 'identifier'| 'numeric'| 'string'| 'time'}
-
-#### [Documentation](#type_elementBaseType-doc-panel-collapse)
+#### <a href="#type_loopImpl-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [Schema Component Representation](#type_elementBaseType-schemaComponent-collapse)
+#### <a href="#type_loopImpl-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<simpleType name="elementBaseType"\>
-   <restriction base="string"\>
-      <enumeration value="binary"/>
-      <enumeration value="date"/>
-      <enumeration value="decimal"/>
-      <enumeration value="identifier"/>
-      <enumeration value="numeric"/>
-      <enumeration value="string"/>
-      <enumeration value="time"/>
-   </restriction>
-</simpleType>
+    <...
+     title="string" [0..1]
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+                  The minimum number of times a loop may repeat. A value of 0 (zero)
+                  indicates that the loop is optional.
 
-[](#top "Go to top of page")
+                  When used in a loop defined
+                  within an implementation,
+                  the value may not be less than the value set on the standard loop referenced
+                  by the implementation loop's 'type'
+                  attribute.
+                 Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+                  The maximum number of times a loop may repeat.
+                  When used in a loop defined within an implementation, the value
+                  may not be greater than
+                  the value set on the standard loop referenced
+                  by the implementation loop's 'type' attribute.
+                 Close  
+     type="NMTOKEN" [1]×Attribute type
+                  The identifier (code attribute) of the standard loop this loop
+                  implements.
+                 Close  
+     code="NMTOKEN" [1]×Attribute code
+                  Code used to uniquely identify a loop implementation within the
+                  transaction/message implementation.
+                 Close  
+     discriminator="tns:discriminatorType" [0..1]×Attribute discriminator
+                  The element position in the loop's first segment used to identify an
+                  implementation of a standard loop from other implementations. The
+                  element identified by the position given in this attribute must also specify an
+                  enumeration of values used only by this implementation and not used
+                  by any other implementations of the standard loop at the same level of the
+                  transaction.
+                 Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [1]   
+          Start Choice [1..*]
+             <tns:segment> tns:segmentImpl </tns:segment> [1]
+             <tns:loop> tns:loopImpl </tns:loop> [0..1]
+          End Choice
+       </tns:sequence>
+    </...>
 
-* * *
+#### <a href="#type_loopImpl-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-### Simple Type: nameType
+    <complexType name="loopImpl">
+       <complexContent>
+          <extension base="tns:loopBase">
+             <sequence>
+                <element name="sequence">
+                   <complexType>
+                      <choice maxOccurs="unbounded">
+                         <element name="segment" type="tns:segmentImpl"/>
+                         <element name="loop" type="tns:loopImpl" minOccurs="0"/>
+                      </choice>
+                   </complexType>
+                </element>
+             </sequence>
+             <attribute name="type" type="NMTOKEN" use="required"/>
+             <attribute name="code" type="NMTOKEN" use="required"/>
+             <attribute name="discriminator" type="tns:discriminatorType"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-#### [Type hierarchy](#type_nameType-type-hierarchy-collapse)
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Super-types:
+------------------------------------------------------------------------
 
-ID < **nameType** (by restriction)
+### Complex Type: <span id="type_loopStandard" class="name">loopStandard</span>
 
-Sub-types:
+#### <a href="#type_loopStandard-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-None
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <span class="type"><a href="#type_loopBase" title="Jump to &quot;loopBase&quot; type definition.">loopBase</a></span> (by extension) &lt; <strong>loopStandard</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-#### [Properties](#type_nameType-properties-table-collapse)
+#### <a href="#type_loopStandard-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Name
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>loopStandard</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-nameType
-
-Content
-
-*   Base XSD Type: ID
-
-*   _pattern_ = \[A-Z\]\[A-Z0-9\]+
-
-#### [Documentation](#type_nameType-doc-panel-collapse)
-
-No documentation provided.
-
-#### [Schema Component Representation](#type_nameType-schemaComponent-collapse)
-
-<simpleType name="nameType"\>
-   <restriction base="ID"\>
-      <pattern value="\[A-Z\]\[A-Z0-9\]+"/>
-   </restriction>
-</simpleType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Simple Type: positionType
-
-#### [Type hierarchy](#type_positionType-type-hierarchy-collapse)
-
-Super-types:
-
-nonNegativeInteger < **positionType** (by restriction)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_positionType-properties-table-collapse)
-
-Name
-
-positionType
-
-Content
-
-*   Base XSD Type: nonNegativeInteger
-
-*   _value_ >= 1
-
-#### [Documentation](#type_positionType-doc-panel-collapse)
-
-No documentation provided.
-
-#### [Schema Component Representation](#type_positionType-schemaComponent-collapse)
-
-<simpleType name="positionType"\>
-   <restriction base="nonNegativeInteger"\>
-      <minInclusive value="1"/>
-   </restriction>
-</simpleType>
-
-[](#top "Go to top of page")
-
-* * *
-
-### Simple Type: syntaxType
-
-#### [Type hierarchy](#type_syntaxType-type-hierarchy-collapse)
-
-Super-types:
-
-string < **syntaxType** (by restriction)
-
-Sub-types:
-
-None
-
-#### [Properties](#type_syntaxType-properties-table-collapse)
-
-Name
-
-syntaxType
-
-Content
-
-*   Base XSD Type: string
-
-*   _value_ comes from list: { 'single'| 'paired'| 'required'| 'exclusion'| 'conditional'| 'list'| 'firstonly'}
-
-#### [Documentation](#type_syntaxType-doc-panel-collapse)
+#### <a href="#type_loopStandard-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [Schema Component Representation](#type_syntaxType-schemaComponent-collapse)
+#### <a href="#type_loopStandard-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<simpleType name="syntaxType"\>
-   <restriction base="string"\>
-      <enumeration value="single"/>
-      <enumeration value="paired"/>
-      <enumeration value="required"/>
-      <enumeration value="exclusion"/>
-      <enumeration value="conditional"/>
-      <enumeration value="list"/>
-      <enumeration value="firstonly"/>
-   </restriction>
-</simpleType>
+    <...
+     title="string" [0..1]
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+                  The minimum number of times a loop may repeat. A value of 0 (zero)
+                  indicates that the loop is optional.
 
-[](#top "Go to top of page")
+                  When used in a loop defined
+                  within an implementation,
+                  the value may not be less than the value set on the standard loop referenced
+                  by the implementation loop's 'type'
+                  attribute.
+                 Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+                  The maximum number of times a loop may repeat.
+                  When used in a loop defined within an implementation, the value
+                  may not be greater than
+                  the value set on the standard loop referenced
+                  by the implementation loop's 'type' attribute.
+                 Close  
+     code="NMTOKEN" [1]×Attribute code
+                  Code used to uniquely identify a loop within the transaction/message.
+                 Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [1]   
+          Start Choice [1..*]
+             <tns:segment> tns:segmentStandard </tns:segment> [1]
+             <tns:loop> tns:loopStandard </tns:loop> [0..1]
+          End Choice
+       </tns:sequence>
+       <tns:syntax> ... </tns:syntax> [0..*]
+    </...>
 
-* * *
+#### <a href="#type_loopStandard-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-### Simple Type: useType
+    <complexType name="loopStandard">
+       <complexContent>
+          <extension base="tns:loopBase">
+             <sequence>
+                <element name="sequence">
+                   <complexType>
+                      <choice maxOccurs="unbounded">
+                         <element name="segment" type="tns:segmentStandard"/>
+                         <element name="loop" type="tns:loopStandard" minOccurs="0"/>
+                      </choice>
+                   </complexType>
+                </element>
+                <element ref="tns:syntax" minOccurs="0" maxOccurs="unbounded"/>
+             </sequence>
+             <attribute name="code" type="NMTOKEN" use="required"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-#### [Type hierarchy](#type_useType-type-hierarchy-collapse)
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Super-types:
+------------------------------------------------------------------------
 
-string < **useType** (by restriction)
+### Complex Type: <span id="type_segmentImpl" class="name">segmentImpl</span>
 
-Sub-types:
+#### <a href="#type_segmentImpl-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-None
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>segmentImpl</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-#### [Properties](#type_useType-properties-table-collapse)
+#### <a href="#type_segmentImpl-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Name
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>segmentImpl</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-useType
-
-Content
-
-*   Base XSD Type: string
-
-*   _value_ comes from list: {'required'|'optional'|'prohibited'}
-
-#### [Documentation](#type_useType-doc-panel-collapse)
+#### <a href="#type_segmentImpl-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
 No documentation provided.
 
-#### [Schema Component Representation](#type_useType-schemaComponent-collapse)
+#### <a href="#type_segmentImpl-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-<simpleType name="useType"\>
-   <restriction base="string"\>
-      <enumeration value="required"/>
-      <enumeration value="optional"/>
-      <enumeration value="prohibited"/>
-   </restriction>
-</simpleType>
+    <...
+     title="string" [0..1]
+     type="NCName" [1]×Attribute type
+                  The name of the standard segment used at this position in the implementation.
+                  Must be a valid segment name that occurs in the same
+                  standard loop.
+                 Close  
+     code="NMTOKEN" [0..1]×Attribute code
+                  Code used to identify a segment within a loop. May be useful when occurrences of a
+                  standard segment contain distinct information.
+                 Close  
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     discriminator="tns:discriminatorType" [0..1]×Attribute discriminator
+                  The element position in the segment used to identify an occurrence
+                  of a standard segment from other implementation occurrences. The
+                  element identified by the position given in this attribute must also specify an
+                  enumeration of values used only by this implementation and not used
+                  by any other implementations of the standard segment in the same implementation loop.
+                 Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+       <tns:sequence   > [0..1]   
+          Start Choice [0..*]
+             <tns:element> tns:elementImpl </tns:element> [1]
+             <tns:composite> tns:compositeImpl </tns:composite> [1]
+          End Choice
+       </tns:sequence>
+    </...>
 
-[](#top "Go to top of page")
+#### <a href="#type_segmentImpl-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-* * *
+    <complexType name="segmentImpl">
+       <complexContent>
+          <extension base="tns:baseType">
+             <sequence>
+                <element name="sequence" minOccurs="0">
+                   <complexType>
+                      <sequence>
+                         <choice minOccurs="0" maxOccurs="unbounded">
+                            <element name="element" type="tns:elementImpl"/>
+                            <element name="composite" type="tns:compositeImpl"/>
+                         </choice>
+                      </sequence>
+                   </complexType>
+                </element>
+             </sequence>
+             <attribute name="type" type="NCName" use="required"/>
+             <attribute name="code" type="NMTOKEN" use="optional"/>
+             <attributeGroup ref="tns:implementationAttributeGroup"/>
+             <attribute name="discriminator" type="tns:discriminatorType" use="optional"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-Glossary
---------
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Abstract (Applies to complex type definitions and element declarations). An abstract element or complex type cannot used to validate an element instance. If there is a reference to an abstract element, only element declarations that can substitute the abstract element can be used to validate the instance. For references to abstract type definitions, only derived types can be used.
+------------------------------------------------------------------------
 
-All Model Group Child elements can be provided _in any order_ in instances. See: [http://www.w3.org/TR/xmlschema-1/#element-all](http://www.w3.org/TR/xmlschema-1/#element-all "http://www.w3.org/TR/xmlschema-1/#element-all").
+### Complex Type: <span id="type_segmentStandard" class="name">segmentStandard</span>
 
-Choice Model Group _Only one_ from the list of child elements and model groups can be provided in instances. See: [http://www.w3.org/TR/xmlschema-1/#element-choice](http://www.w3.org/TR/xmlschema-1/#element-choice "http://www.w3.org/TR/xmlschema-1/#element-choice").
+#### <a href="#type_segmentStandard-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-Collapse Whitespace Policy Replace tab, line feed, and carriage return characters with space character (Unicode character 32). Then, collapse contiguous sequences of space characters into single space character, and remove leading and trailing space characters.
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <strong>segmentStandard</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-Disallowed Substitutions (Applies to element declarations). If _substitution_ is specified, then [substitution group](#term_SubGroup "Look up 'substitution group' in glossary") members cannot be used in place of the given element declaration to validate element instances. If _derivation methods_, e.g. extension, restriction, are specified, then the given element declaration will not validate element instances that have types derived from the element declaration's type using the specified derivation methods. Normally, element instances can override their declaration's type by specifying an `xsi:type` attribute.
+#### <a href="#type_segmentStandard-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Key Constraint Like [Uniqueness Constraint](#term_Unique "Look up 'Uniqueness Constraint' in glossary"), but additionally requires that the specified value(s) must be provided. See: [http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint\_Definitions](http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions "http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions").
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>segmentStandard</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-Key Reference Constraint Ensures that the specified value(s) must match value(s) from a [Key Constraint](#term_Key "Look up 'Key Constraint' in glossary") or [Uniqueness Constraint](#term_Unique "Look up 'Uniqueness Constraint' in glossary"). See: [http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint\_Definitions](http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions "http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions").
+#### <a href="#type_segmentStandard-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Model Group Groups together element content, specifying the order in which the element content can occur and the number of times the group of element content may be repeated. See: [http://www.w3.org/TR/xmlschema-1/#Model\_Groups](http://www.w3.org/TR/xmlschema-1/#Model_Groups "http://www.w3.org/TR/xmlschema-1/#Model_Groups").
+No documentation provided.
 
-Nillable (Applies to element declarations). If an element declaration is nillable, instances can use the `xsi:nil` attribute. The `xsi:nil` attribute is the boolean attribute, _nil_, from the _http://www.w3.org/2001/XMLSchema-instance_ namespace. If an element instance has an `xsi:nil` attribute set to true, it can be left empty, even though its element declaration may have required content.
+#### <a href="#type_segmentStandard-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Notation A notation is used to identify the format of a piece of data. Values of elements and attributes that are of type, NOTATION, must come from the names of declared notations. See: [http://www.w3.org/TR/xmlschema-1/#cNotation\_Declarations](http://www.w3.org/TR/xmlschema-1/#cNotation_Declarations "http://www.w3.org/TR/xmlschema-1/#cNotation_Declarations").
+    <...
+     title="string" [0..1]
+     type="NCName" [0..1]×Attribute type
+              The name of the target type being referenced.
+             Close  
+     minOccurs="nonNegativeInteger" [0..1]×Attribute minOccurs
+              The minimum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+     maxOccurs="nonNegativeInteger" [0..1]×Attribute maxOccurs
+              The maximum number of times a type may occur at the declared location
+              in the EDI structure.
+             Close  
+    >
+       <tns:description> ... </tns:description> [0..1]
+    </...>
 
-Preserve Whitespace Policy Preserve whitespaces exactly as they appear in instances.
+#### <a href="#type_segmentStandard-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Prohibited Derivations (Applies to type definitions). Derivation methods that cannot be used to create sub-types from a given type definition.
+    <complexType name="segmentStandard">
+       <complexContent>
+          <extension base="tns:baseType">
+             <attributeGroup ref="tns:referenceAttributeGroup"/>
+          </extension>
+       </complexContent>
+    </complexType>
 
-Prohibited Substitutions (Applies to complex type definitions). Prevents sub-types that have been derived using the specified derivation methods from validating element instances in place of the given type definition.
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
 
-Replace Whitespace Policy Replace tab, line feed, and carriage return characters with space character (Unicode character 32).
+------------------------------------------------------------------------
 
-Sequence Model Group Child elements and model groups must be provided _in the specified order_ in instances. See: [http://www.w3.org/TR/xmlschema-1/#element-sequence](http://www.w3.org/TR/xmlschema-1/#element-sequence "http://www.w3.org/TR/xmlschema-1/#element-sequence").
+### Complex Type: <span id="type_transactionControlType" class="name">transactionControlType</span>
 
-Substitution Group Elements that are _members_ of a substitution group can be used wherever the _head_ element of the substitution group is referenced.
+#### <a href="#type_transactionControlType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
 
-Substitution Group Exclusions (Applies to element declarations). Prohibits element declarations from nominating themselves as being able to substitute a given element declaration, if they have types that are derived from the original element's type using the specified derivation methods.
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type"><a href="#type_baseType" title="Jump to &quot;baseType&quot; type definition.">baseType</a></span> &lt; <span class="type"><a href="#type_controlType" title="Jump to &quot;controlType&quot; type definition.">controlType</a></span> (by extension) &lt; <strong>transactionControlType</strong> (by extension)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
 
-Target Namespace The target namespace identifies the namespace that components in this schema belongs to. If no target namespace is provided, then the schema components do not belong to any namespace.
+#### <a href="#type_transactionControlType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-Uniqueness Constraint Ensures uniqueness of an element/attribute value, or a combination of values, within a specified scope. See: [http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint\_Definitions](http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions "http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions").
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>transactionControlType</td>
+</tr>
+<tr class="even">
+<td><a href="#term_Abstract" title="Look up &#39;Abstract&#39; in glossary">Abstract</a></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
 
-[](#top "Go to top of page")
+#### <a href="#type_transactionControlType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
 
-* * *
+No documentation provided.
+
+#### <a href="#type_transactionControlType-instance-table-collapse" class="xs3p-panel-title">XML Instance Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <...
+     title="string" [0..1]
+     header="NCName" [1]
+     trailer="NCName" [1]
+     use="tns:useType" [0..1]
+    >
+       <tns:description> ... </tns:description> [0..1]
+    </...>
+
+#### <a href="#type_transactionControlType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <complexType name="transactionControlType">
+       <complexContent>
+          <extension base="tns:controlType">
+             <attribute name="use" type="tns:useType" default="optional"/>
+          </extension>
+       </complexContent>
+    </complexType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Simple Type: <span id="type_discriminatorType" class="name">discriminatorType</span>
+
+#### <a href="#type_discriminatorType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type">decimal</span> &lt; <strong>discriminatorType</strong> (by restriction)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_discriminatorType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>discriminatorType</td>
+</tr>
+<tr class="even">
+<td>Content</td>
+<td><ul class="incremental">
+<li>Base XSD Type: decimal</li>
+</ul>
+<ul class="incremental">
+<li><em>pattern</em> = [0-9]+(\.[0-9]{1,2}){0,1}</li>
+<li>1 &lt;= <em>value</em> &lt;= 99.99</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_discriminatorType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#type_discriminatorType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <simpleType name="discriminatorType">
+       <restriction base="decimal">
+          <minInclusive value="1"/>
+          <maxInclusive value="99.99"/>
+          <pattern value="[0-9]+(\.[0-9]{1,2}){0,1}"/>
+       </restriction>
+    </simpleType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Simple Type: <span id="type_elementBaseType" class="name">elementBaseType</span>
+
+#### <a href="#type_elementBaseType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type">string</span> &lt; <strong>elementBaseType</strong> (by restriction)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_elementBaseType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>elementBaseType</td>
+</tr>
+<tr class="even">
+<td>Content</td>
+<td><ul class="incremental">
+<li>Base XSD Type: string</li>
+</ul>
+<ul class="incremental">
+<li><em>value</em> comes from list: { 'binary'| 'date'| 'decimal'| 'identifier'| 'numeric'| 'string'| 'time'}</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_elementBaseType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#type_elementBaseType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <simpleType name="elementBaseType">
+       <restriction base="string">
+          <enumeration value="binary"/>
+          <enumeration value="date"/>
+          <enumeration value="decimal"/>
+          <enumeration value="identifier"/>
+          <enumeration value="numeric"/>
+          <enumeration value="string"/>
+          <enumeration value="time"/>
+       </restriction>
+    </simpleType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Simple Type: <span id="type_nameType" class="name">nameType</span>
+
+#### <a href="#type_nameType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type">ID</span> &lt; <strong>nameType</strong> (by restriction)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_nameType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>nameType</td>
+</tr>
+<tr class="even">
+<td>Content</td>
+<td><ul class="incremental">
+<li>Base XSD Type: ID</li>
+</ul>
+<ul class="incremental">
+<li><em>pattern</em> = [A-Z][A-Z0-9]+</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_nameType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#type_nameType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <simpleType name="nameType">
+       <restriction base="ID">
+          <pattern value="[A-Z][A-Z0-9]+"/>
+       </restriction>
+    </simpleType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Simple Type: <span id="type_positionType" class="name">positionType</span>
+
+#### <a href="#type_positionType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type">nonNegativeInteger</span> &lt; <strong>positionType</strong> (by restriction)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_positionType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>positionType</td>
+</tr>
+<tr class="even">
+<td>Content</td>
+<td><ul class="incremental">
+<li>Base XSD Type: nonNegativeInteger</li>
+</ul>
+<ul class="incremental">
+<li><em>value</em> &gt;= 1</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_positionType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#type_positionType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <simpleType name="positionType">
+       <restriction base="nonNegativeInteger">
+          <minInclusive value="1"/>
+       </restriction>
+    </simpleType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Simple Type: <span id="type_syntaxType" class="name">syntaxType</span>
+
+#### <a href="#type_syntaxType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type">string</span> &lt; <strong>syntaxType</strong> (by restriction)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_syntaxType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>syntaxType</td>
+</tr>
+<tr class="even">
+<td>Content</td>
+<td><ul class="incremental">
+<li>Base XSD Type: string</li>
+</ul>
+<ul class="incremental">
+<li><em>value</em> comes from list: { 'single'| 'paired'| 'required'| 'exclusion'| 'conditional'| 'list'| 'firstonly'}</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_syntaxType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#type_syntaxType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <simpleType name="syntaxType">
+       <restriction base="string">
+          <enumeration value="single"/>
+          <enumeration value="paired"/>
+          <enumeration value="required"/>
+          <enumeration value="exclusion"/>
+          <enumeration value="conditional"/>
+          <enumeration value="list"/>
+          <enumeration value="firstonly"/>
+       </restriction>
+    </simpleType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+### Simple Type: <span id="type_useType" class="name">useType</span>
+
+#### <a href="#type_useType-type-hierarchy-collapse" class="xs3p-panel-title">Type hierarchy</a>
+
+<table class="table table-striped xs3p-in-panel-table">
+<tbody>
+<tr class="odd">
+<td>Super-types:</td>
+<td><span class="type">string</span> &lt; <strong>useType</strong> (by restriction)</td>
+</tr>
+<tr class="even">
+<td>Sub-types:</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_useType-properties-table-collapse" class="xs3p-panel-title">Properties</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+<table class="table table-striped xs3p-in-panel-table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>useType</td>
+</tr>
+<tr class="even">
+<td>Content</td>
+<td><ul class="incremental">
+<li>Base XSD Type: string</li>
+</ul>
+<ul class="incremental">
+<li><em>value</em> comes from list: {'required'|'optional'|'prohibited'}</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### <a href="#type_useType-doc-panel-collapse" class="xs3p-panel-title">Documentation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+No documentation provided.
+
+#### <a href="#type_useType-schemaComponent-collapse" class="xs3p-panel-title collapsed">Schema Component Representation</a><span class="pull-right xs3p-panel-help"> <span class="glyphicon glyphicon-question-sign"> </span></span>
+
+    <simpleType name="useType">
+       <restriction base="string">
+          <enumeration value="required"/>
+          <enumeration value="optional"/>
+          <enumeration value="prohibited"/>
+       </restriction>
+    </simpleType>
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
+
+<span id="Glossary">Glossary</span>
+-----------------------------------
+
+<span class="glossaryTerm"><span id="term_Abstract">Abstract</span>
+</span>(Applies to complex type definitions and element declarations).
+An abstract element or complex type cannot used to validate an element
+instance. If there is a reference to an abstract element, only element
+declarations that can substitute the abstract element can be used to
+validate the instance. For references to abstract type definitions, only
+derived types can be used.
+
+<span class="glossaryTerm"><span id="term_All">All Model Group</span>
+</span>Child elements can be provided *in any order* in instances. See:
+<http://www.w3.org/TR/xmlschema-1/#element-all>.
+
+<span class="glossaryTerm"><span id="term_Choice">Choice Model
+Group</span> </span>*Only one* from the list of child elements and model
+groups can be provided in instances. See:
+<http://www.w3.org/TR/xmlschema-1/#element-choice>.
+
+<span class="glossaryTerm"><span id="term_CollapseWS">Collapse
+Whitespace Policy</span> </span>Replace tab, line feed, and carriage
+return characters with space character (Unicode character 32). Then,
+collapse contiguous sequences of space characters into single space
+character, and remove leading and trailing space characters.
+
+<span class="glossaryTerm"><span id="term_ElemBlock">Disallowed
+Substitutions</span> </span>(Applies to element declarations). If
+*substitution* is specified, then [substitution
+group](#term_SubGroup "Look up 'substitution group' in glossary")
+members cannot be used in place of the given element declaration to
+validate element instances. If *derivation methods*, e.g. extension,
+restriction, are specified, then the given element declaration will not
+validate element instances that have types derived from the element
+declaration's type using the specified derivation methods. Normally,
+element instances can override their declaration's type by specifying an
+`xsi:type` attribute.
+
+<span class="glossaryTerm"><span id="term_Key">Key Constraint</span>
+</span>Like [Uniqueness
+Constraint](#term_Unique "Look up 'Uniqueness Constraint' in glossary"),
+but additionally requires that the specified value(s) must be provided.
+See:
+<http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions>.
+
+<span class="glossaryTerm"><span id="term_KeyRef">Key Reference
+Constraint</span> </span>Ensures that the specified value(s) must match
+value(s) from a [Key
+Constraint](#term_Key "Look up 'Key Constraint' in glossary") or
+[Uniqueness
+Constraint](#term_Unique "Look up 'Uniqueness Constraint' in glossary").
+See:
+<http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions>.
+
+<span class="glossaryTerm"><span id="term_ModelGroup">Model Group</span>
+</span>Groups together element content, specifying the order in which
+the element content can occur and the number of times the group of
+element content may be repeated. See:
+<http://www.w3.org/TR/xmlschema-1/#Model_Groups>.
+
+<span class="glossaryTerm"><span id="term_Nillable">Nillable</span>
+</span>(Applies to element declarations). If an element declaration is
+nillable, instances can use the `xsi:nil` attribute. The `xsi:nil`
+attribute is the boolean attribute, *nil*, from the
+*http://www.w3.org/2001/XMLSchema-instance* namespace. If an element
+instance has an `xsi:nil` attribute set to true, it can be left empty,
+even though its element declaration may have required content.
+
+<span class="glossaryTerm"><span id="term_Notation">Notation</span>
+</span>A notation is used to identify the format of a piece of data.
+Values of elements and attributes that are of type, NOTATION, must come
+from the names of declared notations. See:
+<http://www.w3.org/TR/xmlschema-1/#cNotation_Declarations>.
+
+<span class="glossaryTerm"><span id="term_PreserveWS">Preserve
+Whitespace Policy</span> </span>Preserve whitespaces exactly as they
+appear in instances.
+
+<span class="glossaryTerm"><span id="term_TypeFinal">Prohibited
+Derivations</span> </span>(Applies to type definitions). Derivation
+methods that cannot be used to create sub-types from a given type
+definition.
+
+<span class="glossaryTerm"><span id="term_TypeBlock">Prohibited
+Substitutions</span> </span>(Applies to complex type definitions).
+Prevents sub-types that have been derived using the specified derivation
+methods from validating element instances in place of the given type
+definition.
+
+<span class="glossaryTerm"><span id="term_ReplaceWS">Replace Whitespace
+Policy</span> </span>Replace tab, line feed, and carriage return
+characters with space character (Unicode character 32).
+
+<span class="glossaryTerm"><span id="term_Sequence">Sequence Model
+Group</span> </span>Child elements and model groups must be provided *in
+the specified order* in instances. See:
+<http://www.w3.org/TR/xmlschema-1/#element-sequence>.
+
+<span class="glossaryTerm"><span id="term_SubGroup">Substitution
+Group</span> </span>Elements that are *members* of a substitution group
+can be used wherever the *head* element of the substitution group is
+referenced.
+
+<span class="glossaryTerm"><span id="term_ElemFinal">Substitution Group
+Exclusions</span> </span>(Applies to element declarations). Prohibits
+element declarations from nominating themselves as being able to
+substitute a given element declaration, if they have types that are
+derived from the original element's type using the specified derivation
+methods.
+
+<span class="glossaryTerm"><span id="term_TargetNS">Target
+Namespace</span> </span>The target namespace identifies the namespace
+that components in this schema belongs to. If no target namespace is
+provided, then the schema components do not belong to any namespace.
+
+<span class="glossaryTerm"><span id="term_Unique">Uniqueness
+Constraint</span> </span>Ensures uniqueness of an element/attribute
+value, or a combination of values, within a specified scope. See:
+<http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions>.
+
+[<span class="glyphicon glyphicon-chevron-up">
+</span>](#top "Go to top of page")
+
+------------------------------------------------------------------------
 
 Generated by [xs3p](https://github.com/Mapudo/xs3p).
-
-$(function () { $("\[data-toggle='tooltip'\]").tooltip(); }); $(function () { $("\[data-toggle='popover'\]").popover(); }); var c = window.markdownit(); $(".xs3p-doc").each(function (i, obj) { var rawDocID = "#" + $(this).attr("id") + "-raw"; var indent = $(rawDocID).html().match("^\\\\n\[\\\\t \]\*"); if (!(indent === null)) { normalized = $(rawDocID) .html() .replace(new RegExp(indent\[0\], "gm"), "\\n"); } else { normalized = $(rawDocID).html(); } $(this).html(c.render(normalized)); $(this) .find("code,pre") .each(function (i, block) { $(this).html($(this).text()); }); }); $(window).scroll(function () { if ( $(".xs3p-sidebar").css("position") == "fixed" && $(window).height() < $(".xs3p-sidebar").height() ) { var perc = $(window).scrollTop() / $("#xs3p-content").height(); var overflow = $(".xs3p-sidebar").height() + 105 - $(window).height(); $(".xs3p-sidebar").css( "top", 65 - Math.round(overflow \* perc) + "px" ); } }); $(window).resize(function () { if ($(".xs3p-sidebar").css("position") == "fixed") { $(".xs3p-sidebar").css("top", "65px"); } });
